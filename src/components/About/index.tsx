@@ -1,5 +1,5 @@
 import * as React from "react";
-import styles from "./index.module.css";
+import styles from "./index.module.scss";
 import { MaxWidth } from "../MaxWidth";
 import { Seperator } from "../Seperator";
 
@@ -11,26 +11,13 @@ export function About({ pattern }: Props) {
   return (
     <MaxWidth className={styles.about} component="section">
       <h2 className={styles.title}>About Me.</h2>
-      <div>
-        {/* <div
-          className={`pattern-${pattern}`}
-          style={{
-            display: "inline-block",
-            marginLeft: "4rem",
-            textAlign: "left",
-            color: "var(--color-primary)"
-          }}
+      <div className={styles.aboutContent}>
+        <div
+          className={`${styles.pictureWrapper} pattern-${pattern}`}
         >
-          <div
-            style={{
-              height: 200,
-              width: 200,
-              background: "var(--color-text)",
-              transform: "translate(1rem, -1rem)"
-            }}
-          />
-        </div> */}
-        <div>
+          <img className={styles.picture} src="/me.jpeg" alt="A picture of Blake" loading="lazy" />
+        </div>
+        <div className={styles.right}>
           <p className={styles.body}>
             Blake is a Javascript developer with 6+ years of experience
             planning, creating, and maintaining websites and various application
@@ -56,7 +43,7 @@ export function About({ pattern }: Props) {
           </p>
         </div>
       </div>
-      <Seperator pattern={pattern} />
+      {/* <Seperator pattern={pattern} /> */}
     </MaxWidth>
   );
 }

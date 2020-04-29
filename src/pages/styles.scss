@@ -19,7 +19,7 @@ body {
   --color-purple: #6c5b7b;
   --color-blue: #355c7d;
 
-  --hero-offset: 36px;
+  --hero-offset: 2rem;
 
   --color-primary: var(--color-peach);
   --color-secondary: var(--color-purple);
@@ -39,22 +39,25 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   background: var(--color-background);
-}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-.App.theme-light {
-  --color-primary: var(--color-purple);
-  --color-secondary: var(--color-peach);
+  &.theme-light {
+    --color-primary: var(--color-purple);
+    --color-secondary: var(--color-peach);
+  
+    --color-text: var(--color-black);
+    --color-background: var(--color-white);
+  }
 
-  --color-text: var(--color-black);
-  --color-background: var(--color-white);
-}
-
-.App.theme-dark {
-  --color-primary: var(--color-peach);
-  --color-secondary: var(--color-purple);
-
-  --color-text: var(--color-white);
-  --color-background: var(--color-black);
+  &.theme-dark {
+    --color-primary: var(--color-peach);
+    --color-secondary: var(--color-purple);
+  
+    --color-text: var(--color-white);
+    --color-background: var(--color-black);
+  }
 }
 
 .link {
