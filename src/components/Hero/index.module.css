@@ -1,0 +1,56 @@
+.hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: var(--color-secondary);
+  position: relative;
+}
+
+.heroBackground {
+  color: var(--color-primary);
+  position: absolute;
+  top: calc(0px - var(--hero-offset));
+  left: calc(0px - var(--hero-offset));
+  right: calc(0px - var(--hero-offset));
+  bottom: calc(0px - var(--hero-offset));
+}
+
+.title {
+  font-size: 4rem;
+}
+
+.new {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: var(--color-text);
+  opacity: 0.2;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.new:hover {
+  opacity: 0.5;
+}
+
+.theme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: var(--color-text);
+  opacity: 0.2;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.theme:hover {
+  opacity: 0.5;
+}
+
+.heroContent {
+  text-align: left;
+  color: var(--color-text);
+  position: relative;
+  padding: 0 4rem;
+}

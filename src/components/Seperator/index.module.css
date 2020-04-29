@@ -1,0 +1,18 @@
+.seperator {
+  color: var(--color-primary);
+  height: 50px;
+  margin: 4rem;
+  position: relative;
+}
+
+.seperator:before {
+  content: "";
+  position: absolute;
+  top: 75%;
+  right: -2rem;
+  height: 10px;
+  width: 100%;
+  transform: translateY(-5px);
+  margin-left: 1rem;
+  background: var(--color-secondary);
+}

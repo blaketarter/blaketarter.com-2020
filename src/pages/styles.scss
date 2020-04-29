@@ -1,0 +1,62 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: sans-serif;
+  text-align: center;
+
+  --color-black: #333333;
+  --color-white: #ffffff;
+
+  --color-peach: #f8b195;
+  --color-pink: #f67280;
+  --color-red: #c06c84;
+  --color-purple: #6c5b7b;
+  --color-blue: #355c7d;
+
+  --hero-offset: 36px;
+
+  --color-primary: var(--color-peach);
+  --color-secondary: var(--color-purple);
+
+  --color-text: var(--color-black);
+  --color-background: var(--color-white);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--color-background);
+}
+
+.App.theme-light {
+  --color-primary: var(--color-purple);
+  --color-secondary: var(--color-peach);
+
+  --color-text: var(--color-black);
+  --color-background: var(--color-white);
+}
+
+.App.theme-dark {
+  --color-primary: var(--color-peach);
+  --color-secondary: var(--color-purple);
+
+  --color-text: var(--color-white);
+  --color-background: var(--color-black);
+}
+
+.link {
+  color: var(--color-primary);
+}
