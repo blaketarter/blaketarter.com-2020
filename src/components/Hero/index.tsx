@@ -30,7 +30,7 @@ export function Hero({ pattern, nextPattern, changeTheme }: Props) {
       />
       <MaxWidth className={styles.heroContent}>
         <h1 className={styles.title}>Hi, I'm Blake Tarter.</h1>
-        <h2 className={styles.subtitle}>A Kansas City based web developer</h2>
+        <h2 className={styles.subtitle}>A Kansas City, MO based TypeScript developer with 6+ years of experience.</h2>
       </MaxWidth>
       <span className={styles.new} onClick={nextPattern}>
         new pattern

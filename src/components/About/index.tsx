@@ -2,10 +2,25 @@ import * as React from "react";
 import styles from "./index.module.scss";
 import { MaxWidth } from "../MaxWidth";
 import { Seperator } from "../Seperator";
+import { SkillsSwapper } from "../SkillSwapper";
 
 interface Props {
   pattern: string;
 }
+
+const skills = [
+  "React",
+  "Redux",
+  "TypeScript",
+  "ReasonML",
+  "React-Native",
+  "Functional Programming",
+  "GraphQL",
+  "HTML5",
+  "CSS3",
+  "Git",
+  "Node",
+]
 
 export function About({ pattern }: Props) {
   return (
@@ -19,7 +34,7 @@ export function About({ pattern }: Props) {
         </div>
         <div className={styles.right}>
           <p className={styles.body}>
-            Blake is a Javascript developer with 6+ years of experience
+            Blake is a TypeScript developer with 6+ years of experience
             planning, creating, and maintaining websites and various application
             platforms. Some technologies that he uses on a regular basis are
             React, Redux, TypeScript, and Node. His projects include client and
@@ -43,7 +58,8 @@ export function About({ pattern }: Props) {
           </p>
         </div>
       </div>
-      {/* <Seperator pattern={pattern} /> */}
+
+      <SkillsSwapper copy="I know" skills={skills} />
     </MaxWidth>
   );
 }

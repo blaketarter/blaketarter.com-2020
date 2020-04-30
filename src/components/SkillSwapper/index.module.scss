@@ -1,0 +1,28 @@
+.skillsSwapper {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.copyWrapper {}
+
+.frontCopy {
+  margin-right: 0.25rem;
+}
+
+.skillListWrapper {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  flex: 1;
+  height: 30px;
+  overflow: hidden;
+}
+
+.skillItem {
+  list-style: none;
+  display: inline-block;
+  font-weight: 700;
+  transition: 0.2s ease;
+  margin-right: 0.25rem;
+  color: var(--color-primary)
+}
