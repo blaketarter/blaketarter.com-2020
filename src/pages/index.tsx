@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { usePattern } from "../utils/usePattern";
 import { Hero } from "../components/Hero";
 import { About } from "../components/About";
+import { History } from "../components/History";
 
 export default function App() {
   const [pattern, nextPattern] = usePattern();
@@ -25,6 +26,7 @@ export default function App() {
       />
       <main>
         <About pattern={pattern} />
+        <History />
       </main>
     </div>
   );

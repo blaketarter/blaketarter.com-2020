@@ -1,0 +1,17 @@
+.title {
+  font-size: 4rem;
+  color: var(--color-text);
+  text-align: left;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 10px;
+    width: 100%;
+    transform: translateY(-5px);
+    margin-left: 1rem;
+    background: var(--color-primary);
+  }
+}

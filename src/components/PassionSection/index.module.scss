@@ -1,0 +1,49 @@
+.body {
+  margin-top: 0;
+  text-align: left;
+  color: var(--color-text);
+  font-size: 1.125rem;
+  line-height: 1.5;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.passionSection {
+  margin: 2rem 0;
+  text-align: left;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.passionBackground {
+  color: var(--color-primary);
+  width: auto;
+  display: inline-block;
+}
+
+.passion {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 1rem;
+  color: var(--color-text);
+  transform: translate(1rem, -1rem);
+  background: var(--color-secondary);
+}
+
+.bodyWrapper {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.bar {
+  height: 80px;
+  width: 10px;
+  background: var(--color-primary);
+  flex-shrink: 0;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}

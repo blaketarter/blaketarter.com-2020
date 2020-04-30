@@ -42,6 +42,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--color-text);
 
   &.theme-light {
     --color-primary: var(--color-purple);
@@ -62,4 +63,5 @@ body {
 
 .link {
   color: var(--color-primary);
+  font-weight: bold;
 }

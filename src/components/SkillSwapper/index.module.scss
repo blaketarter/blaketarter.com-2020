@@ -1,12 +1,32 @@
 .skillsSwapper {
   text-align: left;
   font-size: 1.5rem;
+  position: relative;
+
+  // &:before, &:after {
+  //   display: block;
+  //   font-size: 4rem;
+  //   color: var(--color-primary);
+  //   position: absolute;
+  //   top: 0;
+  // }
+
+  // &:before {
+  //   content: "“";
+  //   left: -2rem;
+  // }
+
+  // &:after {
+  //   content: "”";
+  //   right: -2rem;
+  // }
 }
 
 .copyWrapper {}
 
 .frontCopy {
   margin-right: 0.25rem;
+  color: var(--color-text);
 }
 
 .skillListWrapper {
