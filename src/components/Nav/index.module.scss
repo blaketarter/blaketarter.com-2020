@@ -1,0 +1,27 @@
+.nav {
+  height: 60px;
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navInner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+}
+
+.navItem {
+  background: var(--color-secondary);
+  padding: 1rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  list-style: none;
+}

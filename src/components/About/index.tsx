@@ -55,7 +55,7 @@ export function About({ pattern }: Props) {
             , a product agency that partners with funded startups and existing
             brands to create technology solutions and new digital ventures. I
             also do some freelance work in my spare time with{" "}
-            <a href="https://crema.us" className="link">
+            <a href="https://www.midwesternoriginals.com" className="link">
               Midwestern Originals
             </a>
             .

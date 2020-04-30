@@ -2,6 +2,7 @@ import * as React from "react"
 import Head from 'next/head'
 
 import { usePattern } from "../utils/usePattern";
+import { Nav } from "../components/Nav";
 import { Hero } from "../components/Hero";
 import { About } from "../components/About";
 import { History } from "../components/History";
@@ -19,6 +20,7 @@ export default function App() {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
+      <Nav />
       <Hero
         pattern={pattern}
         nextPattern={nextPattern}
