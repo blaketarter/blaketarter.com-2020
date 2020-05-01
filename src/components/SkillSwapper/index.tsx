@@ -7,18 +7,26 @@ interface Props {
   copy: string
 }
 
-const maxSkills = 4;
+const maxSkills = 4
 
 export const SkillsSwapper = ({ copy, skills }: Props) => {
   const { skillsRandomized } = useSkillsSwapper(skills)
 
-  const skillsList = skillsRandomized.slice(0, maxSkills).concat("and more").map((skill, index) => (
-    <span className={styles.skillItem} key={index} style={{
-      opacity: 1 - (1 / (maxSkills + 1)) * index
-    }}>
-      {skill}{index === maxSkills ? "." : ","}
-    </span>
-  ))
+  const skillsList = skillsRandomized
+    .slice(0, maxSkills)
+    .concat("and more")
+    .map((skill, index) => (
+      <span
+        className={styles.skillItem}
+        key={index}
+        style={{
+          opacity: 1 - (1 / (maxSkills + 1)) * index,
+        }}
+      >
+        {skill}
+        {index === maxSkills ? "." : ","}
+      </span>
+    ))
 
   return (
     <div className={styles.skillsSwapper}>

@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from "react"
+import { useCallback, useEffect, useState } from "react"
 
 const keystrokeLength = 20
 const wordLength = 4000
@@ -7,7 +7,6 @@ export const useSkillsSwapper = (
   skills: string[],
 ): { skillsRandomized: string[] } => {
   const [{ skillsRandomized, currentSkill }, setState] = useState(() => {
-    // const skillsRandomized = shuffle(skills)
     return {
       skillsRandomized: skills,
       currentSkill: skills[0],
@@ -36,7 +35,10 @@ export const useSkillsSwapper = (
           const firstWord = skillsRandomized[0]
 
           setState({
-            skillsRandomized: [firstWord + currentSkill.replace(firstWord, "")[0], ...skillsRandomized.slice(1)],
+            skillsRandomized: [
+              firstWord + currentSkill.replace(firstWord, "")[0],
+              ...skillsRandomized.slice(1),
+            ],
             currentSkill,
           })
         }, keystrokeLength)
@@ -45,6 +47,7 @@ export const useSkillsSwapper = (
 
   useEffect(() => {
     const id = window.requestAnimationFrame(
+      // eslint-disable-next-line @typescript-eslint/no-empty-function
       process.env.NODE_ENV !== "test" ? addLetterOrWord : () => {},
     )
 

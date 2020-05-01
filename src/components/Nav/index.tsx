@@ -1,5 +1,5 @@
-import styles from "./index.module.scss"
 import { MaxWidth } from "../MaxWidth"
+import styles from "./index.module.scss"
 
 export function Nav() {
   return (

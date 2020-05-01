@@ -1,13 +1,13 @@
-import * as React from "react";
-import styles from "./index.module.scss";
-import { MaxWidth } from "../MaxWidth";
-import { SectionTitle } from "../SectionTitle";
-import { SkillsSwapper } from "../SkillSwapper";
-import { PassionSection } from "../PassionSection";
-import { AnimatedPattern } from "../AnimatedPattern";
+import * as React from "react"
+import { AnimatedPattern } from "../AnimatedPattern"
+import { MaxWidth } from "../MaxWidth"
+import { PassionSection } from "../PassionSection"
+import { SectionTitle } from "../SectionTitle"
+import { SkillsSwapper } from "../SkillSwapper"
+import styles from "./index.module.scss"
 
 interface Props {
-  pattern: string;
+  pattern: string
 }
 
 const skills = [
@@ -36,18 +36,23 @@ export function About({ pattern }: Props) {
           className={styles.pictureWrapper}
           offsetMultiplier={5}
         >
-          <img className={styles.picture} src="/me.jpeg" alt="A picture of Blake" loading="lazy" />
+          <img
+            className={styles.picture}
+            src="/me.jpeg"
+            alt="blake smiling"
+            loading="lazy"
+          />
         </AnimatedPattern>
         <div className={styles.right}>
           <p className={styles.body}>
-            I'm a TypeScript developer with 6+ years of experience
+            I&apos;m a TypeScript developer with 6+ years of experience
             planning, creating, and maintaining websites and various application
             platforms. Some technologies that I use on a regular basis are
-            React, Redux, TypeScript, and Node. Some of my projects include client and
-            consumer facing websites, as well as react-native and hybrid
-            applications. I have experience working in a team environment,
-            exceeds in time management skills, and strives to remain on the
-            cutting-edge of the front-end development scene.
+            React, Redux, TypeScript, and Node. Some of my projects include
+            client and consumer facing websites, as well as react-native and
+            hybrid applications. I have experience working in a team
+            environment, exceeds in time management skills, and strives to
+            remain on the cutting-edge of the front-end development scene.
           </p>
           <p className={styles.body}>
             Currently I work at{" "}
@@ -69,16 +74,46 @@ export function About({ pattern }: Props) {
       </div>
       <div className={`${styles.aboutContent} ${styles.smaller}`}>
         <p className={styles.body}>
-          I'm really passionate about many things but a couple of the things that I've been the most passionate about during work are:
+          I&apos;m really passionate about many things but a couple of the
+          things that I&apos;ve been the most passionate about during work are:
         </p>
-        <PassionSection title="TypeScript" pattern={pattern}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</PassionSection>
-        <PassionSection title="React" pattern={pattern}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</PassionSection>
+        <PassionSection title="TypeScript" pattern={pattern}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.
+        </PassionSection>
+        <PassionSection title="React" pattern={pattern}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.
+        </PassionSection>
         <p className={styles.body}>
-          I wouldn't count myself an expert in these yet but I'm spending time exploring:
+          I wouldn&apos;t count myself an expert in these yet but I&apos;m
+          spending time exploring:
         </p>
-        <PassionSection title="Functional Programming" pattern={pattern}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</PassionSection>
-        <PassionSection title="GraphQL" pattern={pattern}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</PassionSection>
+        <PassionSection title="Functional Programming" pattern={pattern}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.
+        </PassionSection>
+        <PassionSection title="GraphQL" pattern={pattern}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+          ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua.
+        </PassionSection>
       </div>
     </MaxWidth>
-  );
+  )
 }

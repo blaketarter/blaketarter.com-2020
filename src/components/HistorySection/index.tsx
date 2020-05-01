@@ -1,5 +1,5 @@
-import styles from "./index.module.scss"
 import { AnimatedPattern } from "../AnimatedPattern"
+import styles from "./index.module.scss"
 
 interface Props {
   title: string
@@ -9,11 +9,21 @@ interface Props {
   pattern: string
 }
 
-export function HistorySection({ title, job, dates, children, pattern }: Props) {
+export function HistorySection({
+  title,
+  job,
+  dates,
+  children,
+  pattern,
+}: Props) {
   return (
     <div className={styles.historySection}>
       <div className={styles.historyHeader}>
-        <AnimatedPattern pattern={pattern} className={styles.historyBackground} offsetMultiplier={5}>
+        <AnimatedPattern
+          pattern={pattern}
+          className={styles.historyBackground}
+          offsetMultiplier={5}
+        >
           <div className={styles.historyJob}>{job}</div>
         </AnimatedPattern>
         <div className={styles.historyTitle}>{title}</div>
