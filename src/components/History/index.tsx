@@ -2,11 +2,17 @@ import * as React from "react";
 import styles from "./index.module.scss";
 import { MaxWidth } from "../MaxWidth";
 import { SectionTitle } from "../SectionTitle";
+import { HistorySection } from "../HistorySection";
 
-export function History() {
+interface Props {
+  pattern: string
+}
+
+export function History({ pattern }: Props) {
   return (
     <MaxWidth className={styles.history} component="section">
       <SectionTitle>My History.</SectionTitle>
+      <div className={styles.historyContent}>
         <p className={styles.body}>
           Blake is a TypeScript developer with 6+ years of experience
           planning, creating, and maintaining websites and various application
@@ -30,6 +36,15 @@ export function History() {
           </a>
           .
         </p>
+      </div>
+      <div className={styles.historyContent}>
+        <HistorySection pattern={pattern} title="Senior Application Developer" job="Crema" dates="Nov 2018 - Present">
+          His projects include client and consumer facing websites, as well as react-native and hybrid
+          applications. He has experience working in a team environment,
+          exceeds in time management skills, and strives to remain on the
+          cutting-edge of the front-end development scene.
+        </HistorySection>
+      </div>
     </MaxWidth>
   );
 }

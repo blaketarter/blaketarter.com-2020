@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from "react"
+import { useState, useCallback, useEffect, useLayoutEffect } from "react"
 import { shuffle } from "./shuffle"
 
 const keystrokeLength = 20
@@ -8,10 +8,10 @@ export const useSkillsSwapper = (
   skills: string[],
 ): { skillsRandomized: string[] } => {
   const [{ skillsRandomized, currentSkill }, setState] = useState(() => {
-    const skillsRandomized = shuffle(skills)
+    // const skillsRandomized = shuffle(skills)
     return {
-      skillsRandomized,
-      currentSkill: skillsRandomized[0],
+      skillsRandomized: skills,
+      currentSkill: skills[0],
     }
   })
 

@@ -3,6 +3,14 @@
   overflow: hidden;
 }
 
+.historyContent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 6rem 0;
+  flex-wrap: wrap;
+}
+
 .body {
   text-align: left;
   color: var(--color-text);

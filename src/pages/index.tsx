@@ -28,7 +28,7 @@ export default function App() {
       />
       <main>
         <About pattern={pattern} />
-        <History />
+        <History pattern={pattern} />
       </main>
     </div>
   );

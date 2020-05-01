@@ -1,4 +1,5 @@
 import styles from "./index.module.scss"
+import { AnimatedPattern } from "../AnimatedPattern"
 
 interface Props {
   title: string
@@ -9,9 +10,9 @@ interface Props {
 export function PassionSection({ title, children, pattern }: Props) {
   return (
     <div className={styles.passionSection}>
-      <div className={`${styles.passionBackground} pattern-${pattern}`}>
+      <AnimatedPattern pattern={pattern} className={styles.passionBackground} offsetMultiplier={5}>
         <div className={`${styles.passion}`}>{title}</div>
-      </div>
+        </AnimatedPattern>
       <div className={styles.bodyWrapper}>
         <div className={styles.bar} />
         <p className={styles.body}>{children}</p>

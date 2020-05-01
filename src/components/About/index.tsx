@@ -5,6 +5,7 @@ import { Seperator } from "../Seperator";
 import { SectionTitle } from "../SectionTitle";
 import { SkillsSwapper } from "../SkillSwapper";
 import { PassionSection } from "../PassionSection";
+import { AnimatedPattern } from "../AnimatedPattern";
 
 interface Props {
   pattern: string;
@@ -31,11 +32,13 @@ export function About({ pattern }: Props) {
         <SectionTitle>About Me.</SectionTitle>
       </MaxWidth>
       <div className={styles.aboutContent}>
-        <div
-          className={`${styles.pictureWrapper} pattern-${pattern}`}
+        <AnimatedPattern
+          pattern={pattern}
+          className={styles.pictureWrapper}
+          offsetMultiplier={5}
         >
           <img className={styles.picture} src="/me.jpeg" alt="A picture of Blake" loading="lazy" />
-        </div>
+        </AnimatedPattern>
         <div className={styles.right}>
           <p className={styles.body}>
             I'm a TypeScript developer with 6+ years of experience

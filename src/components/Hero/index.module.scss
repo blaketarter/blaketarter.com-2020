@@ -10,7 +10,7 @@
 
 .heroBackground {
   color: var(--color-primary);
-  position: absolute;
+  position: absolute !important;
   top: calc(0px - var(--hero-offset));
   left: calc(0px - var(--hero-offset));
   right: calc(0px - var(--hero-offset));
