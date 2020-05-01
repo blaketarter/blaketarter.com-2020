@@ -3,6 +3,8 @@ import styles from "./index.module.scss";
 import { MaxWidth } from "../MaxWidth";
 import { SectionTitle } from "../SectionTitle";
 import { HistorySection } from "../HistorySection";
+import { AnimatedPattern } from "../AnimatedPattern";
+import { HistoryFeaturedSection } from "../HistoryFeaturedSection";
 
 interface Props {
   pattern: string
@@ -37,8 +39,38 @@ export function History({ pattern }: Props) {
           .
         </p>
       </div>
-      <div className={styles.historyContent}>
-        <HistorySection pattern={pattern} title="Senior Application Developer" job="Crema" dates="Nov 2018 - Present">
+      <HistoryFeaturedSection pattern={pattern} title="Senior Application developer" job="Crema" dates="Dec 2019 - Present">
+        His projects include client and consumer facing websites, as well as react-native and hybrid
+        applications. He has experience working in a team environment,
+        exceeds in time management skills, and strives to remain on the
+        cutting-edge of the front-end development scene.
+      </HistoryFeaturedSection>
+      <div className={`${styles.historyContent} ${styles.smaller}`}>
+        <HistorySection pattern={pattern} title="Application Developer" job="Crema" dates="Nov 2017 - Dec 2019">
+          His projects include client and consumer facing websites, as well as react-native and hybrid
+          applications. He has experience working in a team environment,
+          exceeds in time management skills, and strives to remain on the
+          cutting-edge of the front-end development scene.
+        </HistorySection>
+        <HistorySection pattern={pattern} title="Team Lead" job="Code Koalas" dates="Sep 2016 - Nov 2017">
+          His projects include client and consumer facing websites, as well as react-native and hybrid
+          applications. He has experience working in a team environment,
+          exceeds in time management skills, and strives to remain on the
+          cutting-edge of the front-end development scene.
+        </HistorySection>
+        <HistorySection pattern={pattern} title="Web Developer" job="Code Koalas" dates="Aug 2014 - Sep 2016">
+          His projects include client and consumer facing websites, as well as react-native and hybrid
+          applications. He has experience working in a team environment,
+          exceeds in time management skills, and strives to remain on the
+          cutting-edge of the front-end development scene.
+        </HistorySection>
+        <HistorySection pattern={pattern} title="UX Engineer" job="The Briefcase" dates="May 2014 - Aug 2014">
+          His projects include client and consumer facing websites, as well as react-native and hybrid
+          applications. He has experience working in a team environment,
+          exceeds in time management skills, and strives to remain on the
+          cutting-edge of the front-end development scene.
+        </HistorySection>
+        <HistorySection pattern={pattern} title="UX Intern" job="The Briefcase" dates="Dec 2013 - May 2014">
           His projects include client and consumer facing websites, as well as react-native and hybrid
           applications. He has experience working in a team environment,
           exceeds in time management skills, and strives to remain on the
