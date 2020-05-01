@@ -10,11 +10,8 @@ interface Props {
 
 export function AnimatedPattern({ pattern, className = "", children, offsetMultiplier = 10 }: Props) {
   const [offset, setOffset] = React.useState([0, 0]);
-  // const [scale, setScale] = React.useState(false)
 
   return (<div
-    // onMouseEnter={() => setScale(true)}
-    // onMouseLeave= {() => setScale(false)}
     onMouseMove={e => {
       const rect = e.currentTarget.getBoundingClientRect()
       const relativeX = e.pageX - e.currentTarget.offsetLeft
@@ -28,13 +25,12 @@ export function AnimatedPattern({ pattern, className = "", children, offsetMulti
       setOffset(offset);
     }}
     className={`${styles.animatedPatternWrapper} ${className}`}
-    
   >
     <div
       style={{
         transform: `translate(${offset[0]}px, ${offset[1]}px)`
       }}
-      className={`${styles.animatedPattern} pattern-${pattern} `} />
+      className={`${styles.animatedPattern} pattern-${pattern}`} />
     {children}
   </div>)
 }

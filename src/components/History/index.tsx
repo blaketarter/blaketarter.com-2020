@@ -3,7 +3,6 @@ import styles from "./index.module.scss";
 import { MaxWidth } from "../MaxWidth";
 import { SectionTitle } from "../SectionTitle";
 import { HistorySection } from "../HistorySection";
-import { AnimatedPattern } from "../AnimatedPattern";
 import { HistoryFeaturedSection } from "../HistoryFeaturedSection";
 
 interface Props {

@@ -1,5 +1,4 @@
-import { useState, useCallback, useEffect, useLayoutEffect } from "react"
-import { shuffle } from "./shuffle"
+import { useState, useCallback, useEffect } from "react"
 
 const keystrokeLength = 20
 const wordLength = 4000

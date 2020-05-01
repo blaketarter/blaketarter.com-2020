@@ -10,8 +10,6 @@ interface Props {
 }
 
 export function Hero({ pattern, nextPattern, changeTheme }: Props) {
-  const [offset, setOffset] = React.useState([0, 0]);
-
   return (
     <section
       className={styles.hero}

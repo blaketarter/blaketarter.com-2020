@@ -1,7 +1,6 @@
 import * as React from "react";
 import styles from "./index.module.scss";
 import { MaxWidth } from "../MaxWidth";
-import { Seperator } from "../Seperator";
 import { SectionTitle } from "../SectionTitle";
 import { SkillsSwapper } from "../SkillSwapper";
 import { PassionSection } from "../PassionSection";
