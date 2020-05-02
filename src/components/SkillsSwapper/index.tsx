@@ -30,10 +30,8 @@ export const SkillsSwapper = ({ copy, skills }: Props) => {
 
   return (
     <div className={styles.skillsSwapper}>
-      <div className={styles.copyWrapper}>
-        <span className={styles.frontCopy}>{copy}</span>
-        {skillsList}
-      </div>
+      <span className={styles.frontCopy}>{copy}</span>
+      {skillsList}
     </div>
   )
 }

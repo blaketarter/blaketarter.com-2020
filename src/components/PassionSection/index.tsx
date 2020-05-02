@@ -1,9 +1,11 @@
+import * as React from "react"
 import { AnimatedPattern } from "../AnimatedPattern"
+import { BodyParagraph } from "../BodyParagraph"
 import styles from "./index.module.scss"
 
 interface Props {
   title: string
-  children: string
+  children: React.ReactNode
   pattern: string
 }
 
@@ -13,13 +15,13 @@ export function PassionSection({ title, children, pattern }: Props) {
       <AnimatedPattern
         pattern={pattern}
         className={styles.passionBackground}
-        offsetMultiplier={5}
+        offsetMultiplier={2.5}
       >
-        <div className={`${styles.passion}`}>{title}</div>
+        <div className={styles.passion}>{title}</div>
       </AnimatedPattern>
       <div className={styles.bodyWrapper}>
         <div className={styles.bar} />
-        <p className={styles.body}>{children}</p>
+        <BodyParagraph>{children}</BodyParagraph>
       </div>
     </div>
   )

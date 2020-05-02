@@ -47,7 +47,7 @@ body {
   &.theme-light {
     --color-primary: var(--color-purple);
     --color-secondary: var(--color-peach);
-  
+
     --color-text: var(--color-black);
     --color-background: var(--color-white);
   }
@@ -55,13 +55,13 @@ body {
   &.theme-dark {
     --color-primary: var(--color-peach);
     --color-secondary: var(--color-purple);
-  
+
     --color-text: var(--color-white);
     --color-background: var(--color-black);
   }
 }
 
-.link {
+a {
   color: var(--color-primary);
   font-weight: bold;
 }

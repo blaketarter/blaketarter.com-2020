@@ -5,7 +5,7 @@ const patternOptions = [
   "cross-dots-lg",
   "grid-lg",
   "dots-lg",
-  "horizontal-lines-xl",
+  "horizontal-lines-md",
 ]
 
 export function usePattern() {

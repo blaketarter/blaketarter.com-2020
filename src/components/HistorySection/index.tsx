@@ -1,11 +1,13 @@
+import * as React from "react"
 import { AnimatedPattern } from "../AnimatedPattern"
+import { BodyParagraph } from "../BodyParagraph"
 import styles from "./index.module.scss"
 
 interface Props {
   title: string
   job: string
   dates: string
-  children: string
+  children: React.ReactNode
   pattern: string
 }
 
@@ -18,21 +20,19 @@ export function HistorySection({
 }: Props) {
   return (
     <div className={styles.historySection}>
-      <div className={styles.historyHeader}>
-        <AnimatedPattern
-          pattern={pattern}
-          className={styles.historyBackground}
-          offsetMultiplier={5}
-        >
-          <div className={styles.historyJob}>{job}</div>
-        </AnimatedPattern>
-        <div className={styles.historyTitle}>{title}</div>
-      </div>
+      <AnimatedPattern
+        pattern={pattern}
+        className={styles.jobBackground}
+        offsetMultiplier={2.5}
+      >
+        <div className={styles.job}>{job}</div>
+      </AnimatedPattern>
+      <div className={styles.title}>{title}</div>
       <div className={styles.bodyWrapper}>
         <div className={styles.bar} />
-        <div className={styles.right}>
-          <p className={`${styles.body} ${styles.dates}`}>{dates}</p>
-          <p className={styles.body}>{children}</p>
+        <div>
+          <BodyParagraph className={styles.dates}>{dates}</BodyParagraph>
+          <BodyParagraph>{children}</BodyParagraph>
         </div>
       </div>
     </div>

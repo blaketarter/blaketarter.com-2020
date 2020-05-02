@@ -1,9 +1,11 @@
 import * as React from "react"
 import { AnimatedPattern } from "../AnimatedPattern"
+import { BodyParagraph } from "../BodyParagraph"
+import { ContentSection } from "../ContentSection"
 import { MaxWidth } from "../MaxWidth"
 import { PassionSection } from "../PassionSection"
 import { SectionTitle } from "../SectionTitle"
-import { SkillsSwapper } from "../SkillSwapper"
+import { SkillsSwapper } from "../SkillsSwapper"
 import styles from "./index.module.scss"
 
 interface Props {
@@ -30,10 +32,10 @@ export function About({ pattern }: Props) {
       <MaxWidth className={styles.titleWrapper}>
         <SectionTitle>About Me.</SectionTitle>
       </MaxWidth>
-      <div className={styles.aboutContent}>
+      <ContentSection className={styles.summary}>
         <AnimatedPattern
           pattern={pattern}
-          className={styles.pictureWrapper}
+          className={styles.pictureBackground}
           offsetMultiplier={5}
         >
           <img
@@ -44,7 +46,7 @@ export function About({ pattern }: Props) {
           />
         </AnimatedPattern>
         <div className={styles.right}>
-          <p className={styles.body}>
+          <BodyParagraph>
             I&apos;m a TypeScript developer with 6+ years of experience
             planning, creating, and maintaining websites and various application
             platforms. Some technologies that I use on a regular basis are
@@ -53,30 +55,27 @@ export function About({ pattern }: Props) {
             hybrid applications. I have experience working in a team
             environment, exceeds in time management skills, and strives to
             remain on the cutting-edge of the front-end development scene.
-          </p>
-          <p className={styles.body}>
-            Currently I work at{" "}
-            <a href="https://crema.us" className="link">
-              Crema
-            </a>
-            , a product agency that partners with funded startups and existing
-            brands to create technology solutions and new digital ventures. I
-            also do some freelance work in my spare time with{" "}
-            <a href="https://www.midwesternoriginals.com" className="link">
+          </BodyParagraph>
+          <BodyParagraph>
+            Currently I work at <a href="https://crema.us">Crema</a>, a product
+            agency that partners with funded startups and existing brands to
+            create technology solutions and new digital ventures. I also do some
+            freelance work in my spare time with{" "}
+            <a href="https://www.midwesternoriginals.com">
               Midwestern Originals
             </a>
             .
-          </p>
+          </BodyParagraph>
         </div>
-      </div>
+      </ContentSection>
       <div className={styles.skillsSection}>
         <SkillsSwapper copy="I know" skills={skills} />
       </div>
-      <div className={`${styles.aboutContent} ${styles.smaller}`}>
-        <p className={styles.body}>
+      <ContentSection size="small">
+        <BodyParagraph>
           I&apos;m really passionate about many things but a couple of the
           things that I&apos;ve been the most passionate about during work are:
-        </p>
+        </BodyParagraph>
         <PassionSection title="TypeScript" pattern={pattern}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
@@ -93,10 +92,10 @@ export function About({ pattern }: Props) {
           sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.
         </PassionSection>
-        <p className={styles.body}>
+        <BodyParagraph>
           I wouldn&apos;t count myself an expert in these yet but I&apos;m
           spending time exploring:
-        </p>
+        </BodyParagraph>
         <PassionSection title="Functional Programming" pattern={pattern}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
@@ -113,7 +112,7 @@ export function About({ pattern }: Props) {
           sit amet, consectetur adipiscing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.
         </PassionSection>
-      </div>
+      </ContentSection>
     </MaxWidth>
   )
 }

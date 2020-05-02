@@ -12,8 +12,8 @@ interface Props {
 export function Hero({ pattern, nextPattern, changeTheme }: Props) {
   return (
     <section className={styles.hero}>
-      <AnimatedPattern pattern={pattern} className={styles.heroBackground} />
-      <MaxWidth className={styles.heroContent}>
+      <AnimatedPattern pattern={pattern} className={styles.background} />
+      <MaxWidth className={styles.content}>
         <h1 className={styles.title}>Hi, I&apos;m Blake Tarter.</h1>
         <h2 className={styles.subtitle}>
           A Kansas City, MO based TypeScript developer with 6+ years of

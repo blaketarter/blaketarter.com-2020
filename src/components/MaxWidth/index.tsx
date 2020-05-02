@@ -1,3 +1,4 @@
+import classnames from "classnames"
 import * as React from "react"
 import styles from "./index.module.scss"
 
@@ -15,7 +16,7 @@ export function MaxWidth({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const Component: any = component
   return (
-    <Component className={`${styles.maxWidth} ${className}`}>
+    <Component className={classnames(styles.maxWidth, className)}>
       {children}
     </Component>
   )

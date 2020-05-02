@@ -1,47 +1,23 @@
-.body {
-  margin-top: 0;
-  text-align: left;
-  color: var(--color-text);
-  font-size: 1.125rem;
-  line-height: 1.5;
-
-  &:first-child {
-    margin-top: 0;
-  }
-}
-
-.currentJob {
+.featured {
   color: var(--color-primary);
 }
 
-.historyHeader {}
-
-.historySection {
+.background {
   margin: 2rem 0;
   padding: 2rem;
   text-align: left;
   background: var(--color-secondary);
   transform: translate(1rem, -1rem);
-
-  &:last-of-type {
-    margin-bottom: 0;
-  }
 }
 
-.historyBackground {
-  color: var(--color-primary);
-  width: auto;
-  display: inline-block;
-}
-
-.historyJob {
+.job {
   display: inline-block;
   font-size: 2rem;
   font-weight: bold;
   color: var(--color-text);
 }
 
-.historyTitle {
+.title {
   display: inline-block;
   font-size: 2rem;
   font-weight: bold;
@@ -49,24 +25,10 @@
   color: var(--color-text);
 }
 
-.bodyWrapper {
-  display: flex;
+.bottom {
   margin-top: 2rem;
 }
 
 .dates {
   font-weight: bold;
-}
-
-.right {
-
-}
-
-.bar {
-  height: 80px;
-  width: 10px;
-  background: var(--color-primary);
-  flex-shrink: 0;
-  margin-right: 2rem;
-  margin-left: 2rem;
 }

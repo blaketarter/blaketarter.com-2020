@@ -1,4 +1,4 @@
-.animatedPatternWrapper {
+.wrapper {
   position: relative;
 }
 
@@ -8,5 +8,5 @@
   left: 0;
   right: 0;
   bottom: 0;
-  transition: .1s linear transform;
+  transition: 0.1s linear transform;
 }

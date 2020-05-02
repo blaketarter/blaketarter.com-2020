@@ -1,10 +1,11 @@
+import classnames from "classnames"
 import * as React from "react"
 import styles from "./index.module.scss"
 
 interface Props {
   pattern: string
   className?: string
-  children?: React.ReactChild
+  children?: React.ReactNode
   offsetMultiplier?: number
 }
 
@@ -30,13 +31,13 @@ export function AnimatedPattern({
 
         setOffset(offset)
       }}
-      className={`${styles.animatedPatternWrapper} ${className}`}
+      className={`${styles.wrapper} ${className}`}
     >
       <div
         style={{
           transform: `translate(${offset[0]}px, ${offset[1]}px)`,
         }}
-        className={`${styles.animatedPattern} pattern-${pattern}`}
+        className={classnames(styles.animatedPattern, `pattern-${pattern}`)}
       />
       {children}
     </div>

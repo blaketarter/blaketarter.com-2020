@@ -8,7 +8,7 @@
   position: relative;
 }
 
-.heroBackground {
+.background {
   color: var(--color-primary);
   position: absolute !important;
   top: calc(0px - var(--hero-offset));
@@ -17,7 +17,7 @@
   bottom: calc(0px - var(--hero-offset));
 }
 
-.heroContent {
+.content {
   text-align: left;
   color: var(--color-text);
   position: relative;

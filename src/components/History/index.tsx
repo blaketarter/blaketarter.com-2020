@@ -1,4 +1,6 @@
 import * as React from "react"
+import { BodyParagraph } from "../BodyParagraph"
+import { ContentSection } from "../ContentSection"
 import { HistoryFeaturedSection } from "../HistoryFeaturedSection"
 import { HistorySection } from "../HistorySection"
 import { MaxWidth } from "../MaxWidth"
@@ -13,8 +15,8 @@ export function History({ pattern }: Props) {
   return (
     <MaxWidth className={styles.history} component="section">
       <SectionTitle>My History.</SectionTitle>
-      <div className={styles.historyContent}>
-        <p className={styles.body}>
+      <ContentSection>
+        <BodyParagraph>
           Blake is a TypeScript developer with 6+ years of experience planning,
           creating, and maintaining websites and various application platforms.
           Some technologies that he uses on a regular basis are React, Redux,
@@ -23,21 +25,15 @@ export function History({ pattern }: Props) {
           experience working in a team environment, exceeds in time management
           skills, and strives to remain on the cutting-edge of the front-end
           development scene.
-        </p>
-        <p className={styles.body}>
-          Currently Blake works at{" "}
-          <a href="https://crema.us" className="link">
-            Crema
-          </a>
-          , a product agency that partners with funded startups and existing
-          brands to create technology solutions and new digital ventures. He
-          also does some freelance work in his spare time with{" "}
-          <a href="https://crema.us" className="link">
-            Midwestern Originals
-          </a>
-          .
-        </p>
-      </div>
+        </BodyParagraph>
+        <BodyParagraph>
+          Currently Blake works at <a href="https://crema.us">Crema</a>, a
+          product agency that partners with funded startups and existing brands
+          to create technology solutions and new digital ventures. He also does
+          some freelance work in his spare time with{" "}
+          <a href="https://crema.us">Midwestern Originals</a>.
+        </BodyParagraph>
+      </ContentSection>
       <HistoryFeaturedSection
         pattern={pattern}
         title="Senior Application developer"
@@ -49,7 +45,7 @@ export function History({ pattern }: Props) {
         team environment, exceeds in time management skills, and strives to
         remain on the cutting-edge of the front-end development scene.
       </HistoryFeaturedSection>
-      <div className={`${styles.historyContent} ${styles.smaller}`}>
+      <ContentSection size="small">
         <HistorySection
           pattern={pattern}
           title="Application Developer"
@@ -105,7 +101,7 @@ export function History({ pattern }: Props) {
           team environment, exceeds in time management skills, and strives to
           remain on the cutting-edge of the front-end development scene.
         </HistorySection>
-      </div>
+      </ContentSection>
     </MaxWidth>
   )
 }

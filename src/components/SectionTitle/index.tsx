@@ -2,7 +2,7 @@ import * as React from "react"
 import styles from "./index.module.scss"
 
 interface Props {
-  children: string
+  children: React.ReactNode
 }
 
 export function SectionTitle({ children }: Props) {
