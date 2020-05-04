@@ -1,6 +1,10 @@
 .contentSection {
   margin-top: 6rem;
   margin-bottom: 6rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .small {

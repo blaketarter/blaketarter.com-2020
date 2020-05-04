@@ -30,7 +30,7 @@ export function About({ pattern }: Props) {
   return (
     <MaxWidth className={styles.about} component="section">
       <MaxWidth className={styles.titleWrapper}>
-        <SectionTitle>About Me.</SectionTitle>
+        <SectionTitle className={styles.title}>About Me.</SectionTitle>
       </MaxWidth>
       <ContentSection className={styles.summary}>
         <AnimatedPattern

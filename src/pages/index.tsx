@@ -2,6 +2,8 @@ import classnames from "classnames"
 import Head from "next/head"
 import * as React from "react"
 import { About } from "../components/About"
+import { FindMe } from "../components/FindMe"
+import { Footer } from "../components/Footer"
 import { Hero } from "../components/Hero"
 import { History } from "../components/History"
 import { Nav } from "../components/Nav"
@@ -45,7 +47,9 @@ export default function App() {
       <main>
         <About pattern={pattern} />
         <History pattern={pattern} />
+        <FindMe pattern={pattern} />
       </main>
+      <Footer pattern={pattern} />
     </div>
   )
 }

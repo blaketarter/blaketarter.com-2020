@@ -3,7 +3,7 @@ import styles from "./index.module.scss"
 
 export function Nav() {
   return (
-    <nav className={styles.nav}>
+    <nav className={styles.nav} id="top">
       <MaxWidth className={styles.navInner} component="ul">
         <li className={styles.navItem}>About Me.</li>
         <li className={styles.navItem}>My History.</li>

@@ -1,0 +1,39 @@
+.findMe {
+  margin: 12rem 6rem;
+  overflow: hidden;
+  text-align: left;
+}
+
+.externalSection {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.externalBackground {
+  color: var(--color-primary);
+  width: auto;
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.external {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 1rem;
+  color: var(--color-text);
+  transform: translate(1rem, -1rem);
+  background: var(--color-secondary);
+}
+
+.link {
+  display: inline-block;
+  transform: translateY(-1rem);
+}
