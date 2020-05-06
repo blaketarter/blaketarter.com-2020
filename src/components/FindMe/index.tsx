@@ -19,7 +19,7 @@ export function FindMe({ pattern }: Props) {
             className={styles.externalBackground}
             offsetMultiplier={2.5}
           >
-            <div className={styles.external}>Github</div>
+            <p className={styles.external}>Github</p>
           </AnimatedPattern>
           <a className={styles.link} href="https://github.com/blaketarter">
             https://github.com/blaketarter
@@ -31,7 +31,7 @@ export function FindMe({ pattern }: Props) {
             className={styles.externalBackground}
             offsetMultiplier={2.5}
           >
-            <div className={styles.external}>Linkedin</div>
+            <p className={styles.external}>Linkedin</p>
           </AnimatedPattern>
           <a
             className={styles.link}
@@ -46,7 +46,7 @@ export function FindMe({ pattern }: Props) {
             className={styles.externalBackground}
             offsetMultiplier={2.5}
           >
-            <div className={styles.external}>Codepen</div>
+            <p className={styles.external}>Codepen</p>
           </AnimatedPattern>
           <a className={styles.link} href="https://codepen.io/blaketarter/">
             https://codepen.io/blaketarter/
@@ -58,7 +58,7 @@ export function FindMe({ pattern }: Props) {
             className={styles.externalBackground}
             offsetMultiplier={2.5}
           >
-            <div className={styles.external}>NPM</div>
+            <p className={styles.external}>NPM</p>
           </AnimatedPattern>
           <a className={styles.link} href="https://www.npmjs.com/~blaketarter">
             https://www.npmjs.com/~blaketarter
@@ -70,7 +70,7 @@ export function FindMe({ pattern }: Props) {
             className={styles.externalBackground}
             offsetMultiplier={2.5}
           >
-            <div className={styles.external}>Twitter</div>
+            <p className={styles.external}>Twitter</p>
           </AnimatedPattern>
           <a className={styles.link} href="https://twitter.com/itsblaketarter">
             https://twitter.com/itsblaketarter

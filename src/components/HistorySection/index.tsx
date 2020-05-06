@@ -25,9 +25,9 @@ export function HistorySection({
         className={styles.jobBackground}
         offsetMultiplier={2.5}
       >
-        <div className={styles.job}>{job}</div>
+        <h3 className={styles.job}>{job}</h3>
       </AnimatedPattern>
-      <div className={styles.title}>{title}</div>
+      <p className={styles.title}>{title}</p>
       <div className={styles.bodyWrapper}>
         <div className={styles.bar} />
         <div>

@@ -7,6 +7,7 @@ import { Footer } from "../components/Footer"
 import { Hero } from "../components/Hero"
 import { History } from "../components/History"
 import { Nav } from "../components/Nav"
+import { SomeWork } from "../components/SomeWork"
 import { usePattern } from "../utils/usePattern"
 
 export default function App() {
@@ -39,14 +40,15 @@ export default function App() {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <Nav />
-      <Hero
-        pattern={pattern}
-        nextPattern={nextPattern}
-        changeTheme={() => setTheme(theme === "light" ? "dark" : "light")}
-      />
       <main>
+        <Hero
+          pattern={pattern}
+          nextPattern={nextPattern}
+          changeTheme={() => setTheme(theme === "light" ? "dark" : "light")}
+        />
         <About pattern={pattern} />
         <History pattern={pattern} />
+        <SomeWork pattern={pattern} />
         <FindMe pattern={pattern} />
       </main>
       <Footer pattern={pattern} />

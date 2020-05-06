@@ -1,5 +1,6 @@
 .about {
-  margin: 12rem 6rem;
+  margin: 12rem 6rem 0;
+  width: 100%;
 }
 
 .titleWrapper {
@@ -27,6 +28,7 @@
 }
 
 .picture {
+  display: block;
   height: 200px;
   width: 200px;
   background: var(--color-secondary);
@@ -42,7 +44,9 @@
 .skillsSection {
   max-width: 60%;
   margin: 0 auto;
-  min-height: 60px;
+  height: 200px;
+  display: flex;
+  align-items: center;
 
   @media screen and (max-width: 700px) {
     max-width: 100%;

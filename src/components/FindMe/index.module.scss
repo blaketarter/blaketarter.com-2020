@@ -2,11 +2,12 @@
   margin: 12rem 6rem;
   overflow: hidden;
   text-align: left;
+  width: 100%;
 }
 
 .externalSection {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 
   &:first-child {
     margin-top: 0;
@@ -31,6 +32,7 @@
   color: var(--color-text);
   transform: translate(1rem, -1rem);
   background: var(--color-secondary);
+  margin: 0;
 }
 
 .link {

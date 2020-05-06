@@ -17,7 +17,7 @@ export function PassionSection({ title, children, pattern }: Props) {
         className={styles.passionBackground}
         offsetMultiplier={2.5}
       >
-        <div className={styles.passion}>{title}</div>
+        <h3 className={styles.passion}>{title}</h3>
       </AnimatedPattern>
       <div className={styles.bodyWrapper}>
         <div className={styles.bar} />

@@ -21,8 +21,8 @@ export function HistoryFeaturedSection({
   return (
     <AnimatedPattern pattern={pattern} className={styles.featured}>
       <div className={styles.background}>
-        <div className={styles.job}>{job}</div>
-        <div className={styles.title}>- {title}</div>
+        <h3 className={styles.job}>{job}</h3>
+        <p className={styles.title}>- {title}</p>
         <div className={styles.bottom}>
           <BodyParagraph className={styles.dates}>{dates}</BodyParagraph>
           <BodyParagraph>{children}</BodyParagraph>
