@@ -11,7 +11,7 @@ interface Props {
 
 export function Hero({ pattern, nextPattern, changeTheme }: Props) {
   return (
-    <section className={styles.hero}>
+    <section id="top" className={styles.hero}>
       <AnimatedPattern pattern={pattern} className={styles.background} />
       <MaxWidth className={styles.content}>
         <h1 className={styles.title}>Hi, I&apos;m Blake Tarter.</h1>

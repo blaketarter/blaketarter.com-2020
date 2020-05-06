@@ -13,7 +13,7 @@ interface Props {
 
 export function History({ pattern }: Props) {
   return (
-    <MaxWidth className={styles.history} component="section">
+    <MaxWidth id="history" className={styles.history} component="section">
       <SectionTitle>My History.</SectionTitle>
       <ContentSection>
         <BodyParagraph>

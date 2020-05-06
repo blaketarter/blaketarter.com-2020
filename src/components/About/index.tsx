@@ -28,7 +28,7 @@ const skills = [
 
 export function About({ pattern }: Props) {
   return (
-    <MaxWidth className={styles.about} component="section">
+    <MaxWidth id="about" className={styles.about} component="section">
       <MaxWidth className={styles.titleWrapper}>
         <SectionTitle className={styles.title}>About Me.</SectionTitle>
       </MaxWidth>

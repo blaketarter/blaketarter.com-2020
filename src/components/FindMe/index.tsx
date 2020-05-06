@@ -10,7 +10,7 @@ interface Props {
 
 export function FindMe({ pattern }: Props) {
   return (
-    <MaxWidth className={styles.findMe} component="section">
+    <MaxWidth id="find" className={styles.findMe} component="section">
       <SectionTitle>Find Me on the Internet.</SectionTitle>
       <ContentSection size="small">
         <div className={styles.externalSection}>

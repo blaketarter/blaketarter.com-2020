@@ -1,16 +1,16 @@
 .nav {
   height: 60px;
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 0;
   left: 0;
   z-index: 1000;
+  display: flex;
 }
 
 .navInner {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -24,4 +24,8 @@
   font-weight: bold;
   margin-left: 1rem;
   list-style: none;
+
+  a {
+    color: var(--color-text);
+  }
 }
