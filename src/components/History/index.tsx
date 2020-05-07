@@ -17,21 +17,21 @@ export function History({ pattern }: Props) {
       <SectionTitle>My History.</SectionTitle>
       <ContentSection>
         <BodyParagraph>
-          Blake is a TypeScript developer with 6+ years of experience planning,
-          creating, and maintaining websites and various application platforms.
-          Some technologies that he uses on a regular basis are React, Redux,
-          TypeScript, and Node. His projects include client and consumer facing
-          websites, as well as react-native and hybrid applications. He has
-          experience working in a team environment, exceeds in time management
-          skills, and strives to remain on the cutting-edge of the front-end
-          development scene.
+          Like most everyone in their lives I&apos;ve had an interesting journey
+          to where I am now. Originally I set out to be a Graphic Designer as my
+          career of choice, eventually switching to web design, then realizing
+          web development was my real passion. I had always been interested in
+          computers, and took as much time while in school to self teach
+          programming and design. In reality I just have a passion to create and
+          the web is my medium of choice.
         </BodyParagraph>
         <BodyParagraph>
-          Currently Blake works at <a href="https://crema.us">Crema</a>, a
-          product agency that partners with funded startups and existing brands
-          to create technology solutions and new digital ventures. He also does
-          some freelance work in his spare time with{" "}
-          <a href="https://crema.us">Midwestern Originals</a>.
+          My career so far has taken me from startup to agency. From building
+          web applications, marketing websites, hybrid applications, native
+          applications, and back again. Using a myriad of different
+          technologies, frameworks, and methodologies. Currently I find myself
+          mainly working on web and native applications using React and
+          TypeScript.
         </BodyParagraph>
       </ContentSection>
       <HistoryFeaturedSection
@@ -40,10 +40,11 @@ export function History({ pattern }: Props) {
         job="Crema"
         dates="Dec 2019 - Present"
       >
-        His projects include client and consumer facing websites, as well as
-        react-native and hybrid applications. He has experience working in a
-        team environment, exceeds in time management skills, and strives to
-        remain on the cutting-edge of the front-end development scene.
+        During this role I help build web and mobile applications as a member of
+        the production team while also helping mentor and give direction to the
+        development team as a whole. As a Senior developer I&apos;m expected to
+        have areas of expertise and be able to advise the development direction
+        of projects.
       </HistoryFeaturedSection>
       <ContentSection size="small">
         <HistorySection
@@ -52,10 +53,8 @@ export function History({ pattern }: Props) {
           job="Crema"
           dates="Nov 2017 - Dec 2019"
         >
-          His projects include client and consumer facing websites, as well as
-          react-native and hybrid applications. He has experience working in a
-          team environment, exceeds in time management skills, and strives to
-          remain on the cutting-edge of the front-end development scene.
+          While in this role I developed, implemented, and updated software
+          solutions for web and mobile applications.
         </HistorySection>
         <HistorySection
           pattern={pattern}
@@ -63,10 +62,10 @@ export function History({ pattern }: Props) {
           job="Code Koalas"
           dates="Sep 2016 - Nov 2017"
         >
-          His projects include client and consumer facing websites, as well as
-          react-native and hybrid applications. He has experience working in a
-          team environment, exceeds in time management skills, and strives to
-          remain on the cutting-edge of the front-end development scene.
+          I lead the team that is the Web/Hybrid Application team at CodeKoalas,
+          we used web technologies such as Javascript, Angular, Ionic, Cordova,
+          React, and React Native to build and launch experiences for clients
+          and consumers on multiple platforms.
         </HistorySection>
         <HistorySection
           pattern={pattern}
@@ -74,10 +73,8 @@ export function History({ pattern }: Props) {
           job="Code Koalas"
           dates="Aug 2014 - Sep 2016"
         >
-          His projects include client and consumer facing websites, as well as
-          react-native and hybrid applications. He has experience working in a
-          team environment, exceeds in time management skills, and strives to
-          remain on the cutting-edge of the front-end development scene.
+          I was on the team team that developed web sites using HTML, CSS,
+          Javascript, PHP, Drupal
         </HistorySection>
         <HistorySection
           pattern={pattern}
@@ -85,10 +82,9 @@ export function History({ pattern }: Props) {
           job="The Briefcase"
           dates="May 2014 - Aug 2014"
         >
-          His projects include client and consumer facing websites, as well as
-          react-native and hybrid applications. He has experience working in a
-          team environment, exceeds in time management skills, and strives to
-          remain on the cutting-edge of the front-end development scene.
+          I developed and integrated the front-end of Briefcase with the
+          back-end and also made design/usability decisions. I focused on
+          HTML/CSS/JS but also tended to use PHP to do my job.
         </HistorySection>
         <HistorySection
           pattern={pattern}
@@ -96,10 +92,8 @@ export function History({ pattern }: Props) {
           job="The Briefcase"
           dates="Dec 2013 - May 2014"
         >
-          His projects include client and consumer facing websites, as well as
-          react-native and hybrid applications. He has experience working in a
-          team environment, exceeds in time management skills, and strives to
-          remain on the cutting-edge of the front-end development scene.
+          I was a front-end user-experience intern that helped implement the
+          web-app and advised on usability decisions.
         </HistorySection>
       </ContentSection>
     </MaxWidth>

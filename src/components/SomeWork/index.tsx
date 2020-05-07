@@ -12,40 +12,39 @@ interface Props {
 
 const work: Work[] = [
   {
-    title: "hello World",
-    alt: "hello world",
-    description:
-      "Currently I work at Crema, a product agency that partners with funded startups and existing brands to create technology solutions and new digital ventures. I also do some freelance work in my spare time with Midwestern Originals.",
-    src: "",
-    href: "http://example.com",
-    service: "example",
+    title: "reticky-tacky",
+    alt: "The reticky-tacky game board",
+    description: "A native ReasonML tic-tac-toe game built with reprocessing.",
+    src: "/reticky-tacky.png",
+    href: "https://github.com/blaketarter/reticky-tacky",
+    service: "GitHub",
   },
   {
-    title: "hello World",
-    alt: "hello world",
+    title: "simple-fp",
+    alt: "A simple-fp code snippet",
     description:
-      "Currently I work at Crema, a product agency that partners with funded startups and existing brands to create technology solutions and new digital ventures. I also do some freelance work in my spare time with Midwestern Originals.",
-    src: "",
-    href: "http://example.com",
-    service: "example",
+      "A simple, small, no dependency functional programming library used as a tool to explore functional programming concepts.",
+    src: "/simple-fp.png",
+    href: "https://github.com/blaketarter/simple-fp",
+    service: "GitHub",
   },
   {
-    title: "hello World",
-    alt: "hello world",
+    title: "blaketarter.com",
+    alt: "blaketarter.com screenshot",
     description:
-      "Currently I work at Crema, a product agency that partners with funded startups and existing brands to create technology solutions and new digital ventures. I also do some freelance work in my spare time with Midwestern Originals.",
-    src: "",
-    href: "http://example.com",
-    service: "example",
+      "Did this website need to be over-engineered? No. But it was fun, and a place to explore new technologies or techniques.",
+    src: "/blaketarter.com.png",
+    href: "https://github.com/blaketarter/blaketarter.com-2020",
+    service: "GitHub",
   },
   {
-    title: "hello World",
+    title: "KCMO Bus Stops",
     alt: "hello world",
     description:
-      "Currently I work at Crema, a product agency that partners with funded startups and existing brands to create technology solutions and new digital ventures. I also do some freelance work in my spare time with Midwestern Originals.",
-    src: "",
-    href: "http://example.com",
-    service: "example",
+      "A React Native application that shows bus stops in the Kansas City area around your current location and hands off navigation to them using the system navigation app.",
+    src: "/kcbus.png",
+    href: "https://play.google.com/store/apps/details?id=com.blaketarter.kcbus",
+    service: "the Play Store",
   },
 ]
 
@@ -55,14 +54,10 @@ export function SomeWork({ pattern }: Props) {
       <SectionTitle>Some Work.</SectionTitle>
       <ContentSection>
         <BodyParagraph>
-          Blake is a TypeScript developer with 6+ years of experience planning,
-          creating, and maintaining websites and various application platforms.
-          Some technologies that he uses on a regular basis are React, Redux,
-          TypeScript, and Node. His projects include client and consumer facing
-          websites, as well as react-native and hybrid applications. He has
-          experience working in a team environment, exceeds in time management
-          skills, and strives to remain on the cutting-edge of the front-end
-          development scene.
+          While most of what I do on a day-to-day basis I can&apos;t share here
+          for one reason or another, I do find myself sometimes creating stuff
+          worth putting here. It&apos;s not always flashy, but I&apos;ve found
+          that often the fun-stuff doesn&apos;t have to be flashy.
         </BodyParagraph>
       </ContentSection>
       <ContentSection size="small" className={styles.workItems}>
