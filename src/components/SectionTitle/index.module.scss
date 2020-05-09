@@ -21,9 +21,6 @@
     transform: translateY(-5px);
     margin-left: 1rem;
     background: var(--color-primary);
-
-    @media screen and (max-width: 500px) {
-      // display: none;
-    }
+    box-shadow: var(--box-shadow);
   }
 }

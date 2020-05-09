@@ -11,6 +11,15 @@
   @media screen and (max-width: 1000px) {
     position: absolute;
   }
+
+  &.scrolled .navItem {
+    box-shadow: var(--box-shadow);
+
+    &.top {
+      opacity: 1;
+      pointer-events: initial;
+    }
+  }
 }
 
 .navInner {
@@ -25,16 +34,24 @@
 
 .navItem {
   background: var(--color-secondary);
-  padding: 1rem;
   font-weight: bold;
   margin-left: 1rem;
   list-style: none;
+  transition: 0.2s ease;
+
+  &.top {
+    opacity: 0;
+    pointer-events: none;
+  }
 
   &:first-child {
     margin-left: 0;
   }
 
   a {
+    display: inline-block;
+    padding: 1rem;
     color: var(--color-text);
+    text-decoration: none;
   }
 }

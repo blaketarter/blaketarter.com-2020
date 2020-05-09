@@ -1,3 +1,4 @@
+import classNames from "classnames"
 import { AnimatedPattern } from "../AnimatedPattern"
 import { BodyParagraph } from "../BodyParagraph"
 import { MaxWidth } from "../MaxWidth"
@@ -10,16 +11,19 @@ interface Props {
 
 export function Footer({ pattern }: Props) {
   return (
-    <div className={styles.footer}>
+    <footer className={styles.footer}>
       <AnimatedPattern pattern={pattern} className={styles.background} />
       <MaxWidth className={styles.content}>
         <BodyParagraph className={styles.footerText}>
           © 2020 Blake Tarter
         </BodyParagraph>
-        <ScrollLink href="#top" className={styles.footerText}>
+        <ScrollLink
+          href="#top"
+          className={classNames(styles.footerText, styles.top)}
+        >
           ↑ Back to the Top.
         </ScrollLink>
       </MaxWidth>
-    </div>
+    </footer>
   )
 }

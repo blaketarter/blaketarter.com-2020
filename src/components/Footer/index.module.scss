@@ -6,6 +6,7 @@
   justify-content: center;
   background: var(--color-secondary);
   position: relative;
+  box-shadow: var(--box-shadow);
 }
 
 .background {
@@ -33,4 +34,9 @@
   margin: 0;
   display: inline-block;
   font-weight: bold;
+}
+
+.top {
+  text-decoration: none;
+  color: var(--color-text);
 }
