@@ -6,6 +6,11 @@
   left: 0;
   z-index: 1000;
   display: flex;
+  max-width: 100vw;
+
+  @media screen and (max-width: 1000px) {
+    position: absolute;
+  }
 }
 
 .navInner {
@@ -24,6 +29,10 @@
   font-weight: bold;
   margin-left: 1rem;
   list-style: none;
+
+  &:first-child {
+    margin-left: 0;
+  }
 
   a {
     color: var(--color-text);

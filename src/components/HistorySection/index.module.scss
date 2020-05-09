@@ -11,6 +11,7 @@
   color: var(--color-primary);
   width: auto;
   display: inline-block;
+  transform: translateX(-1rem);
 }
 
 .job {
@@ -26,12 +27,18 @@
 
 .title {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   padding: 0 1rem;
   color: var(--color-text);
   transform: translate(1rem, -1rem);
   margin: 0;
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    transform: unset;
+    padding: 0;
+  }
 }
 
 .bodyWrapper {
@@ -46,6 +53,10 @@
   flex-shrink: 0;
   margin-right: 2rem;
   margin-left: 2rem;
+
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 }
 
 .dates {

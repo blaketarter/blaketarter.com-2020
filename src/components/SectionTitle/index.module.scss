@@ -4,6 +4,10 @@
   text-align: left;
   position: relative;
 
+  @media screen and (max-width: 500px) {
+    font-size: 3rem;
+  }
+
   &:first-child {
     margin-top: 0;
   }
@@ -17,5 +21,9 @@
     transform: translateY(-5px);
     margin-left: 1rem;
     background: var(--color-primary);
+
+    @media screen and (max-width: 500px) {
+      // display: none;
+    }
   }
 }

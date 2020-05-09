@@ -72,9 +72,11 @@ export function About({ pattern }: Props) {
         <SkillsSwapper copy="I know" skills={skills} />
       </div>
       <ContentSection size="small">
-        <BodyParagraph>
-          I&apos;m really passionate about many things but a couple of the
-          things that I&apos;ve been the most passionate about are:
+        <BodyParagraph className={styles.passionLabel}>
+          <em>
+            I&apos;m really passionate about many things but a couple of the
+            things that I&apos;ve been the most passionate about are:
+          </em>
         </BodyParagraph>
         <PassionSection title="TypeScript" pattern={pattern}>
           TypeScript is a statically-typed superset of JavaScript that enables
@@ -94,9 +96,11 @@ export function About({ pattern }: Props) {
           The way data flows is predictable and flexible. And React errs on the
           side of using language features instead of inventing magic syntax.
         </PassionSection>
-        <BodyParagraph>
-          I wouldn&apos;t count myself an expert in these yet but I&apos;m
-          spending time exploring:
+        <BodyParagraph className={styles.passionLabel}>
+          <em>
+            I wouldn&apos;t count myself an expert in these yet but I&apos;m
+            spending time exploring:
+          </em>
         </BodyParagraph>
         <PassionSection title="Functional Programming" pattern={pattern}>
           Functional Programming while being opposed to object-oriented
