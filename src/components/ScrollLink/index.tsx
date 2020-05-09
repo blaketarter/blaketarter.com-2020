@@ -9,15 +9,15 @@ interface Props {
 const onClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
   const el = document.getElementById(href.slice(1))
 
-  if (el) {
+  if (el && el.scrollIntoView) {
     e.preventDefault()
     el.scrollIntoView({ behavior: "smooth" })
 
-    if (window.history.pushState) {
-      window.history.pushState(null, href, href)
-    } else {
-      window.location.href = href
-    }
+    // if (window.history.pushState) {
+    //   window.history.pushState(null, href, href)
+    // } else {
+    //   window.location.href = href
+    // }
   }
 }
 

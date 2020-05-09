@@ -1,28 +1,9 @@
 import classNames from "classnames"
 import * as React from "react"
+import { debounce } from "../../utils/debounce"
 import { MaxWidth } from "../MaxWidth"
 import { ScrollLink } from "../ScrollLink"
 import styles from "./index.module.scss"
-
-// The debounce function receives our function as a parameter
-const debounce = <A extends any[], B extends any>(fn: (...a: A) => B) => {
-  // This holds the requestAnimationFrame reference, so we can cancel it if we wish
-  let frame: number
-
-  // The debounce function returns a new function that can receive a variable number of arguments
-  return (...params: A) => {
-    // If the frame variable has been defined, clear it now, and queue for next frame
-    if (frame) {
-      cancelAnimationFrame(frame)
-    }
-
-    // Queue our function call for the next frame
-    frame = requestAnimationFrame(() => {
-      // Call our function and pass any params we received
-      fn(...params)
-    })
-  }
-}
 
 export function Nav() {
   const [scroll, setScroll] = React.useState(0)

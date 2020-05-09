@@ -17,6 +17,10 @@ export default function App() {
   return (
     <div className={classnames("App", `theme-${theme}`)}>
       <Head>
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="default-src 'none'; script-src 'self' 'unsafe-inline'; connect-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; manifest-src 'self';"
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
