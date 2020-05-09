@@ -6,11 +6,11 @@ import { ScrollLink } from "../ScrollLink"
 import styles from "./index.module.scss"
 
 export function Nav() {
-  const [scroll, setScroll] = React.useState(0)
+  const [scrolled, setScrolled] = React.useState(false)
 
   React.useEffect(() => {
     const listener = debounce(() => {
-      setScroll(window?.pageYOffset ?? 0)
+      setScrolled(window?.pageYOffset > 0)
     })
 
     document.addEventListener("scroll", listener, {
@@ -23,7 +23,7 @@ export function Nav() {
   }, [])
 
   return (
-    <nav className={classNames(styles.nav, { [styles.scrolled]: scroll > 0 })}>
+    <nav className={classNames(styles.nav, { [styles.scrolled]: scrolled })}>
       <MaxWidth className={styles.navInner} component="ul">
         <li className={classNames(styles.navItem, styles.top)}>
           <ScrollLink href="#top">↑</ScrollLink>

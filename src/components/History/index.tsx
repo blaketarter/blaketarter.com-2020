@@ -14,7 +14,9 @@ interface Props {
 export function History({ pattern }: Props) {
   return (
     <MaxWidth id="history" className={styles.history} component="section">
-      <SectionTitle>My History.</SectionTitle>
+      <MaxWidth className={styles.titleWrapper}>
+        <SectionTitle>My History.</SectionTitle>
+      </MaxWidth>
       <ContentSection>
         <BodyParagraph>
           Like most everyone in their lives I&apos;ve had an interesting journey

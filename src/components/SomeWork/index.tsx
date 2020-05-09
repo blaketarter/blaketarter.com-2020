@@ -51,7 +51,9 @@ const work: Work[] = [
 export function SomeWork({ pattern }: Props) {
   return (
     <MaxWidth id="work" className={styles.someWork} component="section">
-      <SectionTitle>Some Work.</SectionTitle>
+      <MaxWidth className={styles.titleWrapper}>
+        <SectionTitle>Some Work.</SectionTitle>
+      </MaxWidth>
       <ContentSection>
         <BodyParagraph>
           While most of what I do on a day-to-day basis I can&apos;t share here

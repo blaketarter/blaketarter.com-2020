@@ -11,7 +11,9 @@ interface Props {
 export function FindMe({ pattern }: Props) {
   return (
     <MaxWidth id="find" className={styles.findMe} component="section">
-      <SectionTitle>Find Me on the Internet.</SectionTitle>
+      <MaxWidth className={styles.titleWrapper}>
+        <SectionTitle>Find Me on the Internet.</SectionTitle>
+      </MaxWidth>
       <ContentSection size="small">
         <div className={styles.externalSection}>
           <AnimatedPattern

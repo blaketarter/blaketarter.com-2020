@@ -15,6 +15,10 @@
   &.scrolled .navItem {
     box-shadow: var(--box-shadow);
 
+    @media screen and (max-width: 1000px) {
+      box-shadow: none;
+    }
+
     &.top {
       opacity: 1;
       pointer-events: initial;
@@ -37,7 +41,7 @@
   font-weight: bold;
   margin-left: 1rem;
   list-style: none;
-  transition: 0.2s ease;
+  transition: 0.2s ease opacity, box-shadow;
 
   &.top {
     opacity: 0;
