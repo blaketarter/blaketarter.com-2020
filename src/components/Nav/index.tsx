@@ -13,6 +13,8 @@ export function Nav() {
       setScrolled(window?.pageYOffset > 0)
     })
 
+    listener()
+
     document.addEventListener("scroll", listener, {
       passive: true,
     })
