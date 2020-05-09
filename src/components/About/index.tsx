@@ -42,7 +42,7 @@ export function About({ pattern }: Props) {
             className={styles.picture}
             src="/me.jpeg"
             alt="blake smiling"
-            loading="lazy"
+            loading="eager"
           />
         </AnimatedPattern>
         <div className={styles.right}>
