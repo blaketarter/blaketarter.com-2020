@@ -7,6 +7,6 @@ interface Props {
   className?: string
 }
 
-export function SectionTitle({ children, className = "" }: Props) {
+export function Title({ children, className = "" }: Props) {
   return <h2 className={classnames(styles.title, className)}>{children}</h2>
 }

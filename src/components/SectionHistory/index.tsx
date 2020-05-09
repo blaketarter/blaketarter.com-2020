@@ -4,18 +4,18 @@ import { ContentSection } from "../ContentSection"
 import { HistoryFeaturedSection } from "../HistoryFeaturedSection"
 import { HistorySection } from "../HistorySection"
 import { MaxWidth } from "../MaxWidth"
-import { SectionTitle } from "../SectionTitle"
+import { Title } from "../Title"
 import styles from "./index.module.scss"
 
 interface Props {
   pattern: string
 }
 
-export function History({ pattern }: Props) {
+export function SectionHistory({ pattern }: Props) {
   return (
     <MaxWidth id="history" className={styles.history} component="section">
       <MaxWidth className={styles.titleWrapper}>
-        <SectionTitle>My History.</SectionTitle>
+        <Title>My History.</Title>
       </MaxWidth>
       <ContentSection>
         <BodyParagraph>

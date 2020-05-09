@@ -1,13 +1,13 @@
 import classnames from "classnames"
 import Head from "next/head"
 import * as React from "react"
-import { About } from "../components/About"
-import { FindMe } from "../components/FindMe"
-import { Footer } from "../components/Footer"
-import { Hero } from "../components/Hero"
-import { History } from "../components/History"
 import { Nav } from "../components/Nav"
-import { SomeWork } from "../components/SomeWork"
+import { SectionAbout } from "../components/SectionAbout"
+import { SectionFindMe } from "../components/SectionFindMe"
+import { SectionFooter } from "../components/SectionFooter"
+import { SectionHero } from "../components/SectionHero"
+import { SectionHistory } from "../components/SectionHistory"
+import { SectionSomeWork } from "../components/SectionSomeWork"
 import { usePattern } from "../utils/usePattern"
 
 export default function App() {
@@ -67,17 +67,17 @@ export default function App() {
       </Head>
       <Nav />
       <main>
-        <Hero
+        <SectionHero
           pattern={pattern}
           nextPattern={nextPattern}
           changeTheme={() => setTheme(theme === "light" ? "dark" : "light")}
         />
-        <About pattern={pattern} />
-        <History pattern={pattern} />
-        <SomeWork pattern={pattern} />
-        <FindMe pattern={pattern} />
+        <SectionAbout pattern={pattern} />
+        <SectionHistory pattern={pattern} />
+        <SectionSomeWork pattern={pattern} />
+        <SectionFindMe pattern={pattern} />
       </main>
-      <Footer pattern={pattern} />
+      <SectionFooter pattern={pattern} />
     </div>
   )
 }

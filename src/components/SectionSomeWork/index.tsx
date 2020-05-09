@@ -2,7 +2,7 @@ import { Work } from "../../types/Work"
 import { BodyParagraph } from "../BodyParagraph"
 import { ContentSection } from "../ContentSection"
 import { MaxWidth } from "../MaxWidth"
-import { SectionTitle } from "../SectionTitle"
+import { Title } from "../Title"
 import { WorkItem } from "../WorkItem"
 import styles from "./index.module.scss"
 
@@ -48,11 +48,11 @@ const work: Work[] = [
   },
 ]
 
-export function SomeWork({ pattern }: Props) {
+export function SectionSomeWork({ pattern }: Props) {
   return (
     <MaxWidth id="work" className={styles.someWork} component="section">
       <MaxWidth className={styles.titleWrapper}>
-        <SectionTitle>Some Work.</SectionTitle>
+        <Title>Some Work.</Title>
       </MaxWidth>
       <ContentSection>
         <BodyParagraph>

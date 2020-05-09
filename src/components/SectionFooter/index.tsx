@@ -9,7 +9,7 @@ interface Props {
   pattern: string
 }
 
-export function Footer({ pattern }: Props) {
+export function SectionFooter({ pattern }: Props) {
   return (
     <footer className={styles.footer}>
       <AnimatedPattern pattern={pattern} className={styles.background} />

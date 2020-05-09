@@ -4,8 +4,8 @@ import { BodyParagraph } from "../BodyParagraph"
 import { ContentSection } from "../ContentSection"
 import { MaxWidth } from "../MaxWidth"
 import { PassionSection } from "../PassionSection"
-import { SectionTitle } from "../SectionTitle"
 import { SkillsSwapper } from "../SkillsSwapper"
+import { Title } from "../Title"
 import styles from "./index.module.scss"
 
 interface Props {
@@ -26,11 +26,11 @@ const skills = [
   "Node",
 ]
 
-export function About({ pattern }: Props) {
+export function SectionAbout({ pattern }: Props) {
   return (
     <MaxWidth id="about" className={styles.about} component="section">
       <MaxWidth className={styles.titleWrapper}>
-        <SectionTitle className={styles.title}>About Me.</SectionTitle>
+        <Title className={styles.title}>About Me.</Title>
       </MaxWidth>
       <ContentSection className={styles.summary}>
         <AnimatedPattern

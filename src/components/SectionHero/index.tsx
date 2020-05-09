@@ -9,7 +9,7 @@ interface Props {
   changeTheme: () => unknown
 }
 
-export function Hero({ pattern, nextPattern, changeTheme }: Props) {
+export function SectionHero({ pattern, nextPattern, changeTheme }: Props) {
   return (
     <section id="top" className={styles.hero}>
       <AnimatedPattern pattern={pattern} className={styles.background} />

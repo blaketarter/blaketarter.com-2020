@@ -1,18 +1,18 @@
 import { AnimatedPattern } from "../AnimatedPattern"
 import { ContentSection } from "../ContentSection"
 import { MaxWidth } from "../MaxWidth"
-import { SectionTitle } from "../SectionTitle"
+import { Title } from "../Title"
 import styles from "./index.module.scss"
 
 interface Props {
   pattern: string
 }
 
-export function FindMe({ pattern }: Props) {
+export function SectionFindMe({ pattern }: Props) {
   return (
     <MaxWidth id="find" className={styles.findMe} component="section">
       <MaxWidth className={styles.titleWrapper}>
-        <SectionTitle>Find Me on the Internet.</SectionTitle>
+        <Title>Find Me on the Internet.</Title>
       </MaxWidth>
       <ContentSection size="small">
         <div className={styles.externalSection}>
