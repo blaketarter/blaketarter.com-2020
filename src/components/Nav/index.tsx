@@ -5,27 +5,40 @@ import { MaxWidth } from "../MaxWidth"
 import { ScrollLink } from "../ScrollLink"
 import styles from "./index.module.scss"
 
-export function Nav() {
+interface Props {
+  scrollEnabled?: boolean
+}
+
+export function Nav({ scrollEnabled = false }: Props) {
   const [scrolled, setScrolled] = React.useState(false)
 
   React.useEffect(() => {
-    const listener = debounce(() => {
-      setScrolled(window?.pageYOffset > 0)
-    })
+    if (scrollEnabled) {
+      const listener = debounce(() => {
+        setScrolled(window?.pageYOffset > 0)
+      })
 
-    listener()
+      listener()
 
-    document.addEventListener("scroll", listener, {
-      passive: true,
-    })
+      document.addEventListener("scroll", listener, {
+        passive: true,
+      })
 
-    return () => {
-      document.removeEventListener("scroll", listener)
+      return () => {
+        document.removeEventListener("scroll", listener)
+      }
+    } else {
+      return
     }
-  }, [])
+  }, [scrollEnabled])
 
   return (
-    <nav className={classNames(styles.nav, { [styles.scrolled]: scrolled })}>
+    <nav
+      className={classNames(styles.nav, {
+        [styles.scrolled]: scrolled,
+        [styles.fixed]: scrollEnabled,
+      })}
+    >
       <MaxWidth className={styles.navInner} component="ul">
         <li className={classNames(styles.navItem, styles.top)}>
           <ScrollLink href="#top">↑</ScrollLink>
