@@ -67,13 +67,9 @@ export default function App() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:site_name" content="blaketarter.com" />
       </Head>
-      <Nav />
+      <Nav theme={theme} setTheme={setTheme} />
       <main>
-        <SectionHero
-          pattern={pattern}
-          nextPattern={nextPattern}
-          changeTheme={() => setTheme(theme === "light" ? "dark" : "light")}
-        />
+        <SectionHero pattern={pattern} nextPattern={nextPattern} />
         <SectionAbout pattern={pattern} />
         <SectionHistory pattern={pattern} />
         <SectionSomeWork pattern={pattern} />

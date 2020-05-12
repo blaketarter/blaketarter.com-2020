@@ -7,6 +7,7 @@ interface Props {
   className?: string
   children?: React.ReactNode
   offsetMultiplier?: number
+  onClick?: React.MouseEventHandler<HTMLDivElement>
 }
 
 export function AnimatedPattern({
@@ -14,11 +15,14 @@ export function AnimatedPattern({
   className = "",
   children,
   offsetMultiplier = 10,
+  onClick,
 }: Props) {
   const [offset, setOffset] = React.useState([0, 0])
 
   return (
     <div
+      role="presentation"
+      onClick={onClick}
       onMouseMove={(e) => {
         const rect = e.currentTarget.getBoundingClientRect()
         const relativeX = e.pageX - e.currentTarget.offsetLeft

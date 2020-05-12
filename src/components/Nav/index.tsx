@@ -3,13 +3,16 @@ import * as React from "react"
 import { debounce } from "../../utils/debounce"
 import { MaxWidth } from "../MaxWidth"
 import { ScrollLink } from "../ScrollLink"
+import { ThemeModeSwitcher } from "../ThemeModeSwitcher"
 import styles from "./index.module.scss"
 
 interface Props {
   scrollEnabled?: boolean
+  theme: string
+  setTheme: (theme: string) => unknown
 }
 
-export function Nav({ scrollEnabled = false }: Props) {
+export function Nav({ theme, setTheme, scrollEnabled = false }: Props) {
   const [scrolled, setScrolled] = React.useState(false)
 
   React.useEffect(() => {
@@ -54,6 +57,9 @@ export function Nav({ scrollEnabled = false }: Props) {
         </li>
         <li className={styles.navItem}>
           <ScrollLink href="#find">Find Me.</ScrollLink>
+        </li>
+        <li className={classNames(styles.navItem, styles.theme)}>
+          <ThemeModeSwitcher theme={theme} setTheme={setTheme} />
         </li>
       </MaxWidth>
     </nav>

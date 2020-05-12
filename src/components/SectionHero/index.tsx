@@ -6,13 +6,16 @@ import styles from "./index.module.scss"
 interface Props {
   pattern: string
   nextPattern: () => unknown
-  changeTheme: () => unknown
 }
 
-export function SectionHero({ pattern, nextPattern, changeTheme }: Props) {
+export function SectionHero({ pattern, nextPattern }: Props) {
   return (
     <section id="top" className={styles.hero}>
-      <AnimatedPattern pattern={pattern} className={styles.background} />
+      <AnimatedPattern
+        pattern={pattern}
+        className={styles.background}
+        onClick={nextPattern}
+      />
       <MaxWidth className={styles.content}>
         <h1 className={styles.title}>Hi, I&apos;m Blake Tarter.</h1>
         <h2 className={styles.subtitle}>
@@ -20,12 +23,6 @@ export function SectionHero({ pattern, nextPattern, changeTheme }: Props) {
           experience.
         </h2>
       </MaxWidth>
-      <button className={styles.new} onClick={nextPattern}>
-        new pattern
-      </button>
-      <button className={styles.theme} onClick={changeTheme}>
-        change theme
-      </button>
     </section>
   )
 }

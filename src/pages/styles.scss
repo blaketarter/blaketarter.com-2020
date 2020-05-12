@@ -1,6 +1,8 @@
 :root {
   --color-black: #333333;
+  --color-secondary-black: #444444;
   --color-white: #ffffff;
+  --color-secondary-white: #eceaea;
 
   --color-peach: #f8b195;
   --color-pink: #f67280;
@@ -60,6 +62,7 @@ body {
 
   --color-text: var(--color-black);
   --color-background: var(--color-white);
+  --color-secondary-background: var(--color-secondary-white);
 
   &.theme-light {
     --color-primary: var(--color-purple);
@@ -67,6 +70,7 @@ body {
 
     --color-text: var(--color-black);
     --color-background: var(--color-white);
+    --color-secondary-background: var(--color-secondary-white);
   }
 
   &.theme-dark {
@@ -75,6 +79,7 @@ body {
 
     --color-text: var(--color-white);
     --color-background: var(--color-black);
+    --color-secondary-background: var(--color-secondary-black);
   }
 }
 

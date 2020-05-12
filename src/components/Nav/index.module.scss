@@ -52,6 +52,12 @@
     pointer-events: none;
   }
 
+  &:not(.theme) {
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
+  }
+
   &:first-child {
     margin-left: 0;
   }
