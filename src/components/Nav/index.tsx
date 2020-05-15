@@ -1,6 +1,7 @@
 import classNames from "classnames"
 import * as React from "react"
 import { debounce } from "../../utils/debounce"
+import { ThemeMode } from "../../utils/theme"
 import { MaxWidth } from "../MaxWidth"
 import { ScrollLink } from "../ScrollLink"
 import { ThemeModeSwitcher } from "../ThemeModeSwitcher"
@@ -8,8 +9,8 @@ import styles from "./index.module.scss"
 
 interface Props {
   scrollEnabled?: boolean
-  theme: string
-  setTheme: (theme: string) => unknown
+  theme: ThemeMode
+  setTheme: (theme: ThemeMode) => unknown
 }
 
 export function Nav({ theme, setTheme, scrollEnabled = false }: Props) {

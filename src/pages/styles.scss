@@ -42,12 +42,6 @@ body {
 
   font-family: sans-serif;
   text-align: center;
-
-  --color-primary: var(--color-peach);
-  --color-secondary: var(--color-purple);
-
-  --color-text: var(--color-black);
-  --color-background: var(--color-white);
 }
 
 .App {
@@ -63,6 +57,15 @@ body {
   --color-text: var(--color-black);
   --color-background: var(--color-white);
   --color-secondary-background: var(--color-secondary-white);
+
+  @media (prefers-color-scheme: dark) {
+    --color-primary: var(--color-peach);
+    --color-secondary: var(--color-purple);
+
+    --color-text: var(--color-white);
+    --color-background: var(--color-black);
+    --color-secondary-background: var(--color-secondary-black);
+  }
 
   &.theme-light {
     --color-primary: var(--color-purple);

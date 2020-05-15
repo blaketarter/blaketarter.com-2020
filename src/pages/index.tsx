@@ -1,6 +1,7 @@
 import classnames from "classnames"
 import Head from "next/head"
 import * as React from "react"
+import { CSP } from "../components/CSP"
 import { Nav } from "../components/Nav"
 import { SectionAbout } from "../components/SectionAbout"
 import { SectionFindMe } from "../components/SectionFindMe"
@@ -8,21 +9,17 @@ import { SectionFooter } from "../components/SectionFooter"
 import { SectionHero } from "../components/SectionHero"
 import { SectionHistory } from "../components/SectionHistory"
 import { SectionSomeWork } from "../components/SectionSomeWork"
+import { useTheme } from "../utils/theme"
 import { usePattern } from "../utils/usePattern"
 
 export default function App() {
   const [pattern, nextPattern] = usePattern()
-  const [theme, setTheme] = React.useState("light")
+  const [theme, setTheme] = useTheme()
 
   return (
     <div className={classnames("App", `theme-${theme}`)}>
       <Head>
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content={`default-src 'none'; script-src 'self' 'unsafe-inline'${
-            process.env.NODE_ENV === "development" ? " 'unsafe-eval'" : ""
-          }; connect-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; manifest-src 'self';`}
-        />
+        <CSP />
         <link
           rel="apple-touch-icon"
           sizes="180x180"

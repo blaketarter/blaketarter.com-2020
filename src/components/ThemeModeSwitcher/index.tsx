@@ -1,9 +1,10 @@
 import classNames from "classnames"
+import { ThemeMode } from "../../utils/theme"
 import styles from "./index.module.scss"
 
 interface Props {
-  theme: string
-  setTheme: (theme: string) => unknown
+  theme: ThemeMode
+  setTheme: (theme: ThemeMode) => unknown
 }
 
 export const ThemeModeSwitcher = ({ theme, setTheme }: Props) => {
