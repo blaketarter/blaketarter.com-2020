@@ -1,13 +1,13 @@
 import classnames from "classnames"
-import * as React from "react"
+import { MouseEventHandler, ReactNode, useState } from "react"
 import styles from "./index.module.scss"
 
 interface Props {
   pattern: string
   className?: string
-  children?: React.ReactNode
+  children?: ReactNode
   offsetMultiplier?: number
-  onClick?: React.MouseEventHandler<HTMLDivElement>
+  onClick?: MouseEventHandler<HTMLDivElement>
 }
 
 export function AnimatedPattern({
@@ -17,7 +17,7 @@ export function AnimatedPattern({
   offsetMultiplier = 10,
   onClick,
 }: Props) {
-  const [offset, setOffset] = React.useState([0, 0])
+  const [offset, setOffset] = useState([0, 0])
 
   return (
     <div

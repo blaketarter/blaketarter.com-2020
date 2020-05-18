@@ -1,4 +1,4 @@
-import * as React from "react"
+import { useCallback, useEffect, useState } from "react"
 
 export type ThemeMode = "no-preference" | "dark" | "light"
 
@@ -11,9 +11,9 @@ export const useTheme = ({
   persist = true,
   defaultMode = "no-preference",
 }: Options = {}) => {
-  const [mode, setMode] = React.useState<ThemeMode>(defaultMode)
+  const [mode, setMode] = useState<ThemeMode>(defaultMode)
 
-  const setModeWithPersist = React.useCallback(
+  const setModeWithPersist = useCallback(
     (mode: ThemeMode) => {
       if (persist) {
         // localStorage.setItem("mode", mode)
@@ -23,7 +23,7 @@ export const useTheme = ({
     [persist],
   )
 
-  React.useEffect(() => {
+  useEffect(() => {
     const darkModeMatchMedia = matchMedia("(prefers-color-scheme: dark)")
     // const persistedMode = localStorage.getItem("mode") as ThemeMode
 

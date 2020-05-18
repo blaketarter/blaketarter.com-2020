@@ -1,10 +1,10 @@
 import classnames from "classnames"
-import * as React from "react"
+import { ReactNode } from "react"
 import styles from "./index.module.scss"
 
 interface Props {
   className?: string
-  children: React.ReactNode
+  children: ReactNode
   component?: string
   id?: string
 }

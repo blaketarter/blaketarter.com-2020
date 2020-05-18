@@ -1,5 +1,5 @@
 import classNames from "classnames"
-import * as React from "react"
+import { useEffect, useState } from "react"
 import { debounce } from "../../utils/debounce"
 import { ThemeMode } from "../../utils/theme"
 import { MaxWidth } from "../MaxWidth"
@@ -14,9 +14,9 @@ interface Props {
 }
 
 export function Nav({ theme, setTheme, scrollEnabled = false }: Props) {
-  const [scrolled, setScrolled] = React.useState(false)
+  const [scrolled, setScrolled] = useState(false)
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (scrollEnabled) {
       const listener = debounce(() => {
         setScrolled(window?.pageYOffset > 0)

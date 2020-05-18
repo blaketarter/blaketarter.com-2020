@@ -1,4 +1,4 @@
-import * as React from "react"
+import { useState } from "react"
 
 const patternOptions = [
   "diagonal-lines-lg",
@@ -9,7 +9,7 @@ const patternOptions = [
 ]
 
 export function usePattern() {
-  const [pattern, setState] = React.useState(0)
+  const [pattern, setState] = useState(0)
 
   function nextPattern() {
     setState((pattern + 1) % patternOptions.length)

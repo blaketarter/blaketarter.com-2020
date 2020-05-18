@@ -1,12 +1,12 @@
-import * as React from "react"
+import { MouseEvent, ReactNode } from "react"
 
 interface Props {
   href: string
   className?: string
-  children: React.ReactNode
+  children: ReactNode
 }
 
-const onClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+const onClick = (e: MouseEvent<HTMLAnchorElement>, href: string) => {
   const el = document.getElementById(href.slice(1))
 
   if (el && el.scrollIntoView) {

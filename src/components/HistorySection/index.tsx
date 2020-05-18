@@ -1,4 +1,4 @@
-import * as React from "react"
+import { ReactNode } from "react"
 import { AnimatedPattern } from "../AnimatedPattern"
 import { BodyParagraph } from "../BodyParagraph"
 import styles from "./index.module.scss"
@@ -7,7 +7,7 @@ interface Props {
   title: string
   job: string
   dates: string
-  children: React.ReactNode
+  children: ReactNode
   pattern: string
 }
 
