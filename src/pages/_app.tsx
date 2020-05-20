@@ -24,14 +24,15 @@ export default function App({ Component, pageProps }: AppProps) {
           property="og:title"
           content="blaketarter.com | TypeScript Developer based in Kansas City, MO"
         />
+        <meta property="og:type" content="website" />
         <meta
           property="og:description"
           content="Blake is a TypeScript developer with 6+ years of experience planning, creating, and maintaining websites and various application platforms."
         />
         <meta property="og:image" content="https://blaketarter.com/me.jpeg" />
         <meta property="og:url" content="https://blaketarter.com" />
-        <meta name="twitter:card" content="summary_large_image" />
         <meta property="og:site_name" content="blaketarter.com" />
+        <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <Component {...pageProps} />
     </>
