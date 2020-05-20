@@ -1,0 +1,9 @@
+.borderWrapper {
+  width: 100%;
+  border-left: 1rem solid var(--color-secondary);
+  border-right: 1rem solid var(--color-secondary);
+
+  @media screen and (max-width: 500px) {
+    border: none;
+  }
+}

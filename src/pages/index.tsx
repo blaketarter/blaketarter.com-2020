@@ -1,6 +1,7 @@
 import classnames from "classnames"
 import Head from "next/head"
 import * as React from "react"
+import { BorderWrapper } from "../components/BorderWrapper"
 import { CSP } from "../components/CSP"
 import { Nav } from "../components/Nav"
 import { SectionAbout } from "../components/SectionAbout"
@@ -65,13 +66,13 @@ export default function App() {
         <meta property="og:site_name" content="blaketarter.com" />
       </Head>
       <Nav theme={theme} setTheme={setTheme} />
-      <main>
-        <SectionHero pattern={pattern} nextPattern={nextPattern} />
+      <SectionHero pattern={pattern} nextPattern={nextPattern} />
+      <BorderWrapper component="main">
         <SectionAbout pattern={pattern} />
         <SectionHistory pattern={pattern} />
         <SectionSomeWork pattern={pattern} />
         <SectionFindMe pattern={pattern} />
-      </main>
+      </BorderWrapper>
       <SectionFooter pattern={pattern} />
     </div>
   )
