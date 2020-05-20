@@ -44,7 +44,10 @@ export function Nav({ theme, setTheme, scrollEnabled = false }: Props) {
       })}
     >
       <MaxWidth className={styles.navInner} component="ul">
-        <li className={classNames(styles.navItem, styles.top)}>
+        <li
+          aria-hidden="true"
+          className={classNames(styles.navItem, styles.top)}
+        >
           <ScrollLink href="#top">↑</ScrollLink>
         </li>
         <li className={styles.navItem}>
