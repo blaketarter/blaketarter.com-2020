@@ -39,4 +39,7 @@
 .top {
   text-decoration: none;
   color: var(--color-text);
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
 }
