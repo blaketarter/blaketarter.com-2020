@@ -15,7 +15,7 @@ describe("Home", () => {
     cy.document().toMatchImageSnapshot()
   })
 
-  it("Change Pattern", () => {
+  it.skip("Change Pattern", () => {
     cy.visit("/")
     cy.findByLabelText("enable light mode").click()
     cy.findByTestId("change-pattern").click({ force: true })
