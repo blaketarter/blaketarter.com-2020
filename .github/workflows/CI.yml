@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   Test:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     env:
       CI: true
 
@@ -22,7 +22,7 @@ jobs:
       - run: npm run test:serve
 
   Visual:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     env:
       CI: true
 
