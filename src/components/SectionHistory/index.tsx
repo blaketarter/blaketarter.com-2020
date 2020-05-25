@@ -19,21 +19,21 @@ export function SectionHistory({ pattern }: Props) {
       </MaxWidth>
       <ContentSection>
         <BodyParagraph>
-          Like most everyone in their lives I&apos;ve had an interesting journey
-          to where I am now. Originally I set out to be a Graphic Designer as my
-          career of choice, eventually switching to web design, then realizing
-          web development was my real passion. I had always been interested in
-          computers and took as much time while in school to self teach
-          programming and design. In reality I just have a passion to create and
-          the web is my medium of choice.
+          I&apos;ve had an interesting journey to get me to where I am now.
+          Originally I set out to be a graphic designer, then switched to web
+          design in college, and then eventually realized web development was my
+          true passion. While growing up, I was always interested in computers
+          and took as much time as I could to teach myself programming and
+          design. I’ve learned I have a passion to create and problem solve; web
+          development is a perfect culmination of these two things.
         </BodyParagraph>
         <BodyParagraph>
-          My career so far has taken me from startup to agency. From building
-          web applications, marketing websites, hybrid applications, native
-          applications, and back again. Using a myriad of different
-          technologies, frameworks, and methodologies. Currently I find myself
-          mainly working on web and native applications using React and
-          TypeScript.
+          My career so far has taken me from startup to agency. Using a myriad
+          of different technologies, frameworks, and methodologies I’ve built
+          everything from web applications to marketing websites, hybrid and
+          native applications, and then back again. Currently I happily find
+          myself working on web and native applications using React and
+          TypeScript as well as the occasional freelance website.
         </BodyParagraph>
       </ContentSection>
       <HistoryFeaturedSection

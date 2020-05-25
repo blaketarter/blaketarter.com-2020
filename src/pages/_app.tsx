@@ -13,11 +13,13 @@ export default function App({ Component, pageProps }: AppProps) {
         </title>
         <meta
           name="description"
-          content="Blake is a TypeScript developer with 6+ years of experience planning, creating, and maintaining websites and various application platforms."
+          content="I'm a TypeScript developer with over six years of experience
+            planning, creating, and maintaining various types of apps and
+            websites."
         />
         <meta
           name="keywords"
-          content="typescript, javascript, developer, dev, web, font-end, website, kansas city, react"
+          content="typescript, javascript, developer, dev, web, font-end, website, kansas city, react, node"
         />
 
         <meta
@@ -27,7 +29,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:type" content="website" />
         <meta
           property="og:description"
-          content="Blake is a TypeScript developer with 6+ years of experience planning, creating, and maintaining websites and various application platforms."
+          content="I'm a TypeScript developer with over six years of experience
+            planning, creating, and maintaining various types of apps and
+            websites."
         />
         <meta property="og:image" content="https://blaketarter.com/me.jpeg" />
         <meta property="og:url" content="https://blaketarter.com" />
