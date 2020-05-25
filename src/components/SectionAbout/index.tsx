@@ -40,7 +40,7 @@ export function SectionAbout({ pattern }: Props) {
         >
           <img
             className={styles.picture}
-            src="/me.jpeg"
+            src="/images/me.jpeg"
             alt="blake smiling"
             loading="eager"
           />

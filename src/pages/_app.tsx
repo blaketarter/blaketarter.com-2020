@@ -33,7 +33,10 @@ export default function App({ Component, pageProps }: AppProps) {
             planning, creating, and maintaining various types of apps and
             websites."
         />
-        <meta property="og:image" content="https://blaketarter.com/me.jpeg" />
+        <meta
+          property="og:image"
+          content="https://blaketarter.com/images/me.jpeg"
+        />
         <meta property="og:url" content="https://blaketarter.com" />
         <meta property="og:site_name" content="blaketarter.com" />
         <meta name="twitter:card" content="summary_large_image" />

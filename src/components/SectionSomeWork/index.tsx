@@ -15,7 +15,7 @@ const work: Work[] = [
     title: "reticky-tacky",
     alt: "The reticky-tacky game board",
     description: "A native ReasonML tic-tac-toe game built with reprocessing.",
-    src: "/reticky-tacky.png",
+    src: "/images/reticky-tacky.png",
     href: "https://github.com/blaketarter/reticky-tacky",
     service: "GitHub",
   },
@@ -24,7 +24,7 @@ const work: Work[] = [
     alt: "A simple-fp code snippet",
     description:
       "A simple, small, no dependency functional programming library used as a tool to explore functional programming concepts.",
-    src: "/simple-fp.png",
+    src: "/images/simple-fp.png",
     href: "https://github.com/blaketarter/simple-fp",
     service: "GitHub",
   },
@@ -33,7 +33,7 @@ const work: Work[] = [
     alt: "blaketarter.com screenshot",
     description:
       "Did this website need to be over-engineered? No. But it was fun, and a place to explore new technologies and techniques.",
-    src: "/blaketarter.com.png",
+    src: "/images/blaketarter.com.png",
     href: "https://github.com/blaketarter/blaketarter.com-2020",
     service: "GitHub",
   },
@@ -42,7 +42,7 @@ const work: Work[] = [
     alt: "hello world",
     description:
       "A React Native application that shows bus stops in the Kansas City area around your current location and hands-off navigation to them using the system navigation app.",
-    src: "/kcbus.png",
+    src: "/images/kcbus.png",
     href: "https://play.google.com/store/apps/details?id=com.blaketarter.kcbus",
     service: "the Play Store",
   },
