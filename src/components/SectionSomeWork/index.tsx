@@ -32,7 +32,7 @@ const work: Work[] = [
     title: "blaketarter.com",
     alt: "blaketarter.com screenshot",
     description:
-      "Did this website need to be over-engineered? No. But it was fun, and a place to explore new technologies or techniques.",
+      "Did this website need to be over-engineered? No. But it was fun, and a place to explore new technologies and techniques.",
     src: "/blaketarter.com.png",
     href: "https://github.com/blaketarter/blaketarter.com-2020",
     service: "GitHub",
@@ -41,7 +41,7 @@ const work: Work[] = [
     title: "KCMO Bus Stops",
     alt: "hello world",
     description:
-      "A React Native application that shows bus stops in the Kansas City area around your current location and hands off navigation to them using the system navigation app.",
+      "A React Native application that shows bus stops in the Kansas City area around your current location and hands-off navigation to them using the system navigation app.",
     src: "/kcbus.png",
     href: "https://play.google.com/store/apps/details?id=com.blaketarter.kcbus",
     service: "the Play Store",

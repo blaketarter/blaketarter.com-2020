@@ -49,12 +49,12 @@ export function SectionAbout({ pattern }: Props) {
           <BodyParagraph>
             I&apos;m a TypeScript developer with 6+ years of experience
             planning, creating, and maintaining websites and various application
-            platforms. Some technologies that I use on a regular basis are
-            React, Redux, TypeScript, and Node. Some of my projects include
-            client and consumer facing websites, as well as react-native and
-            hybrid applications. I have experience working in a team environment
-            and strive to remain on the cutting-edge of the front-end
-            development scene.
+            platforms. Some technologies that I use regularly are React, Redux,
+            TypeScript, and Node. Some of my projects include client and
+            consumer-facing websites, as well as react-native and hybrid
+            applications. I have experience working in a team environment and
+            strive to remain on the cutting-edge of the front-end development
+            scene.
           </BodyParagraph>
           <BodyParagraph>
             Currently I work at <a href="https://crema.us">Crema</a>, a product
@@ -74,14 +74,14 @@ export function SectionAbout({ pattern }: Props) {
       <ContentSection size="small">
         <BodyParagraph className={styles.passionLabel}>
           <em>
-            I&apos;m really passionate about many things but a couple of the
-            things that I&apos;ve been the most passionate about are:
+            I&apos;m passionate about many things but a couple of the things
+            that I&apos;ve been the most passionate about are:
           </em>
         </BodyParagraph>
         <PassionSection title="TypeScript" pattern={pattern}>
           TypeScript is a statically-typed superset of JavaScript that enables
-          developers to focus more on building sound systems, with less runtime
-          errors. This up front investment in the development process is a
+          developers to focus more on building sound systems, with fewer runtime
+          errors. This upfront investment in the development process is a
           tradeoff that has a net benefit. It allows the compiler to catch
           common errors and other things allowing the developer to focus on the
           bespoke problem they are solving.
@@ -108,18 +108,18 @@ export function SectionAbout({ pattern }: Props) {
           of functional-programming can be beneficial when applied even to
           object-oriented systems. Immutability in non-performance hot paths can
           be incredibly useful to eliminate programming errors and show intent.
-          Declarative code can be much more easier to understand and reason
-          about, leading to less errors.
+          Declarative code can be easier to understand and reason about, leading
+          to fewer errors.
         </PassionSection>
         <PassionSection title="GraphQL" pattern={pattern}>
           GraphQL is intriguing to me because it&apos;s a different way to think
           about communicating with the back end in regards to data. Having a
           separate schema file that enforces type-safety and other validations
           on both client-side and back end is wonderful, and thinking of the
-          data as a graph more closely aligns to how I&apos;ve ended up working
-          with the data on the client-side. I&apos;ve used it in production on a
-          couple of projects and I&apos;ve had positive experiences positive so
-          far.
+          data as a graph more closely aligns with how I&apos;ve ended up
+          working with the data on the client-side. I&apos;ve used it in
+          production on a couple of projects and I&apos;ve had positive
+          experiences positive so far.
         </PassionSection>
       </ContentSection>
     </MaxWidth>

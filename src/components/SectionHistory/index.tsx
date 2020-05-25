@@ -23,7 +23,7 @@ export function SectionHistory({ pattern }: Props) {
           to where I am now. Originally I set out to be a Graphic Designer as my
           career of choice, eventually switching to web design, then realizing
           web development was my real passion. I had always been interested in
-          computers, and took as much time while in school to self teach
+          computers and took as much time while in school to self teach
           programming and design. In reality I just have a passion to create and
           the web is my medium of choice.
         </BodyParagraph>
@@ -75,8 +75,8 @@ export function SectionHistory({ pattern }: Props) {
           job="Code Koalas"
           dates="Aug 2014 - Sep 2016"
         >
-          I was on the team team that developed web sites using HTML, CSS,
-          Javascript, PHP, Drupal
+          I was on the team that developed web sites using HTML, CSS,
+          Javascript, PHP, Drupal.
         </HistorySection>
         <HistorySection
           pattern={pattern}

@@ -20,7 +20,7 @@ export function SectionHero({ pattern, nextPattern }: Props) {
       <MaxWidth className={styles.content}>
         <h1 className={styles.title}>Hi, I&apos;m Blake Tarter.</h1>
         <h2 className={styles.subtitle}>
-          A Kansas City, MO based TypeScript developer with 6+ years of
+          A Kansas City, MO-based TypeScript developer with 6+ years of
           experience.
         </h2>
       </MaxWidth>
