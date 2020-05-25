@@ -15,9 +15,15 @@ describe("Home", () => {
     cy.document().toMatchImageSnapshot()
   })
 
-  it.skip("Change Pattern", () => {
+  it("Change Pattern", () => {
     cy.visit("/")
     cy.findByLabelText("enable light mode").click()
+
+    cy.findByTestId("change-pattern").click({ force: true })
+    cy.findByText("Hi, I'm Blake Tarter.").trigger("mouseover").should("exist")
+
+    cy.document().toMatchImageSnapshot()
+
     cy.findByTestId("change-pattern").click({ force: true })
     cy.findByText("Hi, I'm Blake Tarter.").trigger("mouseover").should("exist")
 
