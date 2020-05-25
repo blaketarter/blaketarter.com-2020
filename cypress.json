@@ -1,5 +1,18 @@
 {
+  "viewportHeight": 900,
+  "viewportWidth": 1440,
   "baseUrl": "http://localhost:3000",
   "supportFile": "cypress/support/index.ts",
-  "video": false
+  "video": false,
+  "ignoreTestFiles": ["**/__snapshots__/*", "**/__image_snapshots__/*"],
+  "env": {
+    "cypress-plugin-snapshots": {
+      "imageConfig": {
+        "createDiffImage": true,
+        "resizeDevicePixelRatio": true,
+        "threshold": 0,
+        "thresholdType": "percent"
+      }
+    }
+  }
 }

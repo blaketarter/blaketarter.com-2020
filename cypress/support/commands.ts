@@ -1,4 +1,5 @@
 import "@testing-library/cypress/add-commands"
+import "cypress-plugin-snapshots/commands"
 
 // ***********************************************
 // This example commands.js shows you how to

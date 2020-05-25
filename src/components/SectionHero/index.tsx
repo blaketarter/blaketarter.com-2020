@@ -15,6 +15,7 @@ export function SectionHero({ pattern, nextPattern }: Props) {
         pattern={pattern}
         className={styles.background}
         onClick={nextPattern}
+        testId="change-pattern"
       />
       <MaxWidth className={styles.content}>
         <h1 className={styles.title}>Hi, I&apos;m Blake Tarter.</h1>

@@ -8,6 +8,7 @@ interface Props {
   children?: ReactNode
   offsetMultiplier?: number
   onClick?: MouseEventHandler<HTMLDivElement>
+  testId?: string
 }
 
 export function AnimatedPattern({
@@ -16,6 +17,7 @@ export function AnimatedPattern({
   children,
   offsetMultiplier = 10,
   onClick,
+  testId,
 }: Props) {
   const [offset, setOffset] = useState([0, 0])
 
@@ -36,6 +38,7 @@ export function AnimatedPattern({
         setOffset(offset)
       }}
       className={`${styles.wrapper} ${className}`}
+      data-testid={testId}
     >
       <div
         style={{
