@@ -3,7 +3,7 @@ export {}
 declare global {
   namespace Cypress {
     interface Chainable<Subject = any> {
-      toMatchImageSnapshot(): unknown
+      toMatchImageSnapshot(ots?: Record<string, unknown>): unknown
     }
   }
 }
