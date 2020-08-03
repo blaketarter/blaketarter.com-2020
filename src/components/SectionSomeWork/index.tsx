@@ -63,8 +63,8 @@ export function SectionSomeWork({ pattern }: Props) {
         </BodyParagraph>
       </ContentSection>
       <ContentSection size="small" className={styles.workItems}>
-        {work.map((props) => (
-          <WorkItem {...props} pattern={pattern} key={props.title} />
+        {work.map((workItem) => (
+          <WorkItem {...workItem} pattern={pattern} key={workItem.title} />
         ))}
       </ContentSection>
     </MaxWidth>
