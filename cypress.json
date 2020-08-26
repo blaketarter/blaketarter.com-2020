@@ -15,7 +15,11 @@
         "resizeDevicePixelRatio": true,
         "threshold": 0.001,
         "thresholdType": "percent"
-      }
+      },
+      "screenshotConfig": {
+        "disableTimersAndAnimations": true
+      },
+      "serverEnabled": false
     }
   }
 }
