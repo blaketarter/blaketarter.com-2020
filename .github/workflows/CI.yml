@@ -22,8 +22,6 @@ jobs:
       - run: npm run test:serve
 
   Visual:
-    # skip for now
-    if: false
     runs-on: macos-latest
     env:
       CI: true
