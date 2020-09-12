@@ -1,0 +1,14 @@
+{
+  "extends": ["config:base"],
+  "schedule": ["every weekend"],
+  "reviewers": ["blaketarter"],
+  "packageRules": [
+    {
+      "packagePatterns": ["*"],
+      "minor": {
+        "groupName": "all non-major dependencies",
+        "groupSlug": "all-minor-patch"
+      }
+    }
+  ]
+}
