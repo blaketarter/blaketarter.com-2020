@@ -10,6 +10,8 @@ module.exports = {
     "plugin:jsx-a11y/recommended",
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended",
+    "plugin:jest-dom/recommended",
+    "plugin:testing-library/recommended",
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -25,6 +27,8 @@ module.exports = {
     "import",
     "jsx-a11y",
     "prettier",
+    "testing-library",
+    "jest-dom",
   ],
   rules: {
     "react/react-in-jsx-scope": "off",
@@ -60,4 +64,5 @@ module.exports = {
   globals: {
     React: "writable",
   },
+  overrides: [{ files: ["**/__tests__/**"], env: { jest: true } }],
 }

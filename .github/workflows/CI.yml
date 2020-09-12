@@ -19,6 +19,7 @@ jobs:
       - run: npm ci
       - run: npm run test:lint
       - run: npm run test:types
+      - run: npm run test:unit:ci
       - run: npm run test:serve
 
   Visual:
