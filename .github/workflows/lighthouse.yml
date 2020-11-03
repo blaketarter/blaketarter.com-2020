@@ -30,7 +30,7 @@ jobs:
         with:
           urls: |
             ${{ steps.vercel_preview_url.outputs.vercel_preview_url }}
-            https://blaketarter.com
+            https://blaketarter-com-git-master.blaketarter.vercel.app
           uploadArtifacts: true
           temporaryPublicStorage: true
       - name: Format lighthouse score
@@ -48,7 +48,7 @@ jobs:
             Object.keys(resultBase).forEach(key => resultBase[key] = formatResult(resultBase[key]))
 
             const score = res => res >= 90 ? '🟢' : res >= 50 ? '🟠' : '🔴'
-            const delta = (newRes, baseRes) => `${(newRes - baseRes) > 0 ? '👍 +' : '👎 -'}${Math.abs(newRes - baseRes)}`
+            const delta = (newRes, baseRes) => `${(newRes - baseRes) >= 0 ? '👍 +' : '👎 -'}${Math.abs(newRes - baseRes)}`
 
             const comment = [
                 `⚡️ [Lighthouse report](${Object.values(links)[0]}) for the changes in this PR:`,
