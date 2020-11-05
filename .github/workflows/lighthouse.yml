@@ -33,6 +33,7 @@ jobs:
             https://blaketarter-com-git-master.blaketarter.vercel.app
           uploadArtifacts: true
           temporaryPublicStorage: true
+          runs: 3
       - name: Format lighthouse score
         id: format_lighthouse_score
         uses: actions/github-script@v3
@@ -48,7 +49,10 @@ jobs:
             Object.keys(resultBase).forEach(key => resultBase[key] = formatResult(resultBase[key]))
 
             const score = res => res >= 90 ? '🟢' : res >= 50 ? '🟠' : '🔴'
-            const delta = (newRes, baseRes) => `${(newRes - baseRes) >= 0 ? '👍 +' : '👎 -'}${Math.abs(newRes - baseRes)}`
+            const delta = (newRes, baseRes) => {
+              const diff = newRes - baseRes
+              return `${diff > 0 ? '👍 +' : diff < 0 ? '👎 -' : ''}${Math.abs(diff)}`
+            }
 
             const comment = [
                 `⚡️ [Lighthouse report](${Object.values(links)[0]}) for the changes in this PR:`,
@@ -61,7 +65,7 @@ jobs:
                 `| ${score(result.pwa)} PWA | ${result.pwa} | ${delta(result.pwa, resultBase.pwa)} |`,
                 ' ',
                 `*Lighthouse ran on [${Object.keys(links)[0]}](${Object.keys(links)[0]})*`,
-                `*Delta based on [${Object.keys(links)[1]}](${Object.keys(links)[1]}) [Lighthouse report](${Object.values(links)[1]})*`
+                `*Delta based on [${Object.keys(links)[1]}](${Object.keys(links)[1]}) [(Lighthouse report)](${Object.values(links)[1]})*`
             ].join('\n')
 
              core.setOutput("comment", comment); 
