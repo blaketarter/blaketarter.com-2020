@@ -43,7 +43,6 @@ jobs:
             const result = ${{ steps.lighthouse_audit.outputs.manifest }}
               .filter(manifest => manifest.url === '${{ steps.vercel_preview_url.outputs.vercel_preview_url }}/')
               .reduce((acc, curr, index, arr) => {
-                console.log(curr)
                 Object.keys(acc).forEach(key => acc[key] = acc[key] + (curr.summary[key] / arr.length))
                 return acc
               }, { performance: 0, accessibility: 0, 'best-practices': 0, seo: 0, pwa: 0 })
@@ -51,7 +50,6 @@ jobs:
             const resultBase = ${{ steps.lighthouse_audit.outputs.manifest }}
               .filter(manifest => manifest.url === 'https://blaketarter-com-git-master.blaketarter.vercel.app/')
               .reduce((acc, curr, index, arr) => {
-                console.log(curr)
                 Object.keys(acc).forEach(key => acc[key] = acc[key] + (curr.summary[key] / arr.length))
                 return acc
               }, { performance: 0, accessibility: 0, 'best-practices': 0, seo: 0, pwa: 0 })
