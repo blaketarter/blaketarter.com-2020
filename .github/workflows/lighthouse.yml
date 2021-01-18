@@ -40,8 +40,20 @@ jobs:
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            const result = ${{ steps.lighthouse_audit.outputs.manifest }}[0].summary
-            const resultBase = ${{ steps.lighthouse_audit.outputs.manifest }}[1].summary
+            const result = ${{ steps.lighthouse_audit.outputs.manifest }}
+              .filter(manifest => manifest.url === '${{ steps.vercel_preview_url.outputs.vercel_preview_url }}/')
+              .reduce((acc, curr, index, arr) => {
+                Object.keys(acc).forEach(key => acc[key] = acc[key] + (curr.summary[key] / arr.length))
+                return acc
+              }, { performance: 0, accessibility: 0, 'best-practices': 0, seo: 0, pwa: 0 })
+            
+            const resultBase = ${{ steps.lighthouse_audit.outputs.manifest }}
+              .filter(manifest => manifest.url === 'https://blaketarter-com-git-master.blaketarter.vercel.app/')
+              .reduce((acc, curr, index, arr) => {
+                Object.keys(acc).forEach(key => acc[key] = acc[key] + (curr.summary[key] / arr.length))
+                return acc
+              }, { performance: 0, accessibility: 0, 'best-practices': 0, seo: 0, pwa: 0 })
+            
             const links = ${{ steps.lighthouse_audit.outputs.links }}
 
             const formatResult = (res) => Math.round((res * 100))
