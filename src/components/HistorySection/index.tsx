@@ -20,11 +20,7 @@ export function HistorySection({
 }: Props) {
   return (
     <div className={styles.historySection}>
-      <AnimatedPattern
-        pattern={pattern}
-        className={styles.jobBackground}
-        offsetMultiplier={2.5}
-      >
+      <AnimatedPattern pattern={pattern} className={styles.jobBackground}>
         <h3 className={styles.job}>{job}</h3>
       </AnimatedPattern>
       <p className={styles.title}>{title}</p>

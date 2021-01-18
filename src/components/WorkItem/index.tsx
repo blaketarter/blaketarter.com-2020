@@ -18,11 +18,7 @@ export function WorkItem({
 }: Props) {
   return (
     <div className={styles.workItem}>
-      <AnimatedPattern
-        pattern={pattern}
-        className={styles.imageWrapper}
-        offsetMultiplier={5}
-      >
+      <AnimatedPattern pattern={pattern} className={styles.imageWrapper}>
         <img className={styles.image} alt={alt} src={src} loading="lazy" />
       </AnimatedPattern>
       <div className={styles.copy}>

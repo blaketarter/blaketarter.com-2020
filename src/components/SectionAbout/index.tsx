@@ -33,11 +33,7 @@ export function SectionAbout({ pattern }: Props) {
         <Title className={styles.title}>About Me.</Title>
       </MaxWidth>
       <ContentSection className={styles.summary}>
-        <AnimatedPattern
-          pattern={pattern}
-          className={styles.pictureBackground}
-          offsetMultiplier={5}
-        >
+        <AnimatedPattern pattern={pattern} className={styles.pictureBackground}>
           <img
             className={styles.picture}
             src="/images/me.jpeg"
