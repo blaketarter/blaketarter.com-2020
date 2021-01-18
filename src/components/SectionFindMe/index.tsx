@@ -19,7 +19,6 @@ export function SectionFindMe({ pattern }: Props) {
           <AnimatedPattern
             pattern={pattern}
             className={styles.externalBackground}
-            offsetMultiplier={2.5}
           >
             <p className={styles.external}>Github</p>
           </AnimatedPattern>
@@ -31,7 +30,6 @@ export function SectionFindMe({ pattern }: Props) {
           <AnimatedPattern
             pattern={pattern}
             className={styles.externalBackground}
-            offsetMultiplier={2.5}
           >
             <p className={styles.external}>Linkedin</p>
           </AnimatedPattern>
@@ -46,7 +44,6 @@ export function SectionFindMe({ pattern }: Props) {
           <AnimatedPattern
             pattern={pattern}
             className={styles.externalBackground}
-            offsetMultiplier={2.5}
           >
             <p className={styles.external}>Codepen</p>
           </AnimatedPattern>
@@ -58,7 +55,6 @@ export function SectionFindMe({ pattern }: Props) {
           <AnimatedPattern
             pattern={pattern}
             className={styles.externalBackground}
-            offsetMultiplier={2.5}
           >
             <p className={styles.external}>NPM</p>
           </AnimatedPattern>
@@ -70,7 +66,6 @@ export function SectionFindMe({ pattern }: Props) {
           <AnimatedPattern
             pattern={pattern}
             className={styles.externalBackground}
-            offsetMultiplier={2.5}
           >
             <p className={styles.external}>Twitter</p>
           </AnimatedPattern>

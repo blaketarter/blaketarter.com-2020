@@ -12,11 +12,7 @@ interface Props {
 export function PassionSection({ title, children, pattern }: Props) {
   return (
     <div className={styles.passionSection}>
-      <AnimatedPattern
-        pattern={pattern}
-        className={styles.passionBackground}
-        offsetMultiplier={2.5}
-      >
+      <AnimatedPattern pattern={pattern} className={styles.passionBackground}>
         <h3 className={styles.passion}>{title}</h3>
       </AnimatedPattern>
       <div className={styles.bodyWrapper}>
