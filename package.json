@@ -27,7 +27,7 @@
     "test:e2e:verify:linux": "docker run -t -v $PWD:/e2e -w /e2e --add-host=host.docker.internal:172.17.0.1 cypress/included:4.12.1 open --project . --config baseUrl=http://host.docker.internal:5000"
   },
   "dependencies": {
-    "classnames": "2.3.1",
+    "classnames": "2.3.3",
     "next": "10.2.0",
     "normalize.css": "8.0.1",
     "pattern.css": "1.0.0",
